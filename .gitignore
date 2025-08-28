@@ -1,0 +1,25 @@
+# artefatos temporários
+TMP_SPLIT/
+*.aux
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.synctex.gz
+
+# PDFs/MD gerados
+EB2_NIW_FULL-BINDER*.pdf
+EB2_NIW_Petition_Package_MASTER.pdf
+*_generate_*.pdf
+*_powershell.pdf
+*_bash.pdf
+*.pdf
+
+# sistemas
+.DS_Store
+Thumbs.db

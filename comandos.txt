@@ -1,0 +1,48 @@
+pandoc "EB2_NIW_Petition_Package_MASTER.md" \
+  --from=markdown+footnotes+pipe_tables+table_captions+link_attributes \
+  --to=pdf --pdf-engine=xelatex \
+  --filter pandoc-crossref \
+  --citeproc --csl=estilo.csl \
+  -V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black \
+  -o EB2_NIW_Petition_Package_MASTER.pdf
+
+  pandoc "EB2_NIW_Petition_Package_MASTER.md" \
+  --from=markdown+footnotes+pipe_tables+table_captions+link_attributes \
+  --to=pdf --pdf-engine=xelatex \
+  --filter pandoc-crossref \
+  -V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black \
+  -o EB2_NIW_Petition_Package_MASTER.pdf
+
+
+pandoc "EB2_NIW_Petition_Package_MASTER.md" \
+  --from=markdown+footnotes+pipe_tables+table_captions+link_attributes \
+  --to=pdf --pdf-engine=xelatex \
+  --filter pandoc-crossref \
+  --citeproc \
+  -V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black \
+  -o EB2_NIW_Petition_Package_MASTER.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+pandoc "EB2_NIW_Petition_Package_MASTER.md"   --from=markdown+footnotes+pipe_tables+table_captions+link_attributes   --to=pdf --pdf-engine=xelatex --filter pandoc-crossref   -V mainfont="Times New Roman" -V sansfont="Arial" -V monofont="Consolas"   -V geometry:margin=1in -V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black   --citeproc --csl=estilo.csl --bibliography=references.bib   -o "EB2_NIW_Petition_Package_MASTER.pdf"
+
+cmd.exe /v:on /c ".\make_binder_intercalado.cmd"
+
+
+
+pandoc "EB2_NIW_Petition_Package_MASTER.md" \
+  --from=markdown+footnotes+pipe_tables+table_captions+link_attributes \
+  --to=pdf --pdf-engine=xelatex --filter pandoc-crossref \
+  -V mainfont="Times New Roman" -V sansfont="Arial" -V monofont="Consolas" \
+  -V geometry:margin=1in -V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black \
+  --citeproc --csl=estilo.csl --bibliography=references.bib \
+  -o "EB2_NIW_Petition_Package_MASTER.pdf"
