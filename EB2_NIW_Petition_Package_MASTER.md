@@ -1,3 +1,13 @@
+<!-- Compile with:
+pandoc "EB2_NIW_Petition_Package_MASTER.md" \
+  --from=markdown+footnotes+pipe_tables+table_captions+link_attributes \
+  --to=pdf --pdf-engine=xelatex --filter pandoc-crossref \
+  -V mainfont="Times New Roman" -V sansfont="Arial" -V monofont="Consolas" \
+  -V geometry:margin=1in -V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black \
+  --citeproc --csl=estilo.csl --bibliography=references.bib \
+  -o "EB2_NIW_Petition_Package_MASTER.pdf"
+-->
+
 # TABLE OF CONTENTS (to be paginated post-layout)
 
 **Preliminary**  
@@ -88,7 +98,6 @@ M5 (12–24m): Automated compliance evidence; **lead time ↓ 50%**; **change fa
 | **Credentials/Profile** | **[D-01]–[D-06]** | Readiness and track record |
 
 [[PAGE BREAK]]
-<!-- COVER LETTER START (LETTERHEAD INLINE, PANDOC-FRIENDLY) -->
 
 # COVER LETTER — EB-2 NIW (Form I-140 Self-Petition; Premium Processing)
 
@@ -108,8 +117,8 @@ Address: [SEU ENDEREÇO COMPLETO]
 ---
 
 **Summary (Matter of Dhanasar).**  
-**Prong 1 — National importance.** The endeavor—**secure cloud & DevOps automation** for organizations operating in or supporting **critical infrastructure**—directly advances **cybersecurity**, **resilient digital infrastructure**, and **continuity of services**, consistent with federal strategy **[A-01, pp. 6, 10–11; A-02, pp. 2–3; A-03, pp. 1, 3–4]**. Industry and workforce data show persistent demand for Cloud/DevOps/Cyber skills **[B-01, pp. 3–5; B-02, pp. 6–9; B-03, pp. 9–12; B-05, pp. 8–15, 40–52; B-06, pp. 5–12, 28–37]**. Standards (e.g., **NIST/FedRAMP**) require **automation/policy-as-code** at scale **[C-01, pp. 1–3; C-02, pp. 1–3]**.  
-**Prong 2 — Well positioned.** Multi-cloud credentials and delivery record in **Infrastructure as Code (IaC)**, **CI/CD with policy-as-code**, **SBOM & artifact signing/provenance**, **Kubernetes/OpenShift (ARO) with GitOps**, and **Observability & Reliability** demonstrate ability to execute **[D-01–D-06; E-01; E-02]**.  
+**Prong 1 — National importance.** The endeavor—**secure cloud & DevOps automation** for organizations operating in or supporting **critical infrastructure**—directly advances **cybersecurity**, **resilient digital infrastructure**, and **continuity of services**, consistent with federal strategy **[A-01, pp. 6, 10–11; A-02, pp. 2–3; A-03, pp. 1, 3–4]** and with broader policy context ([@NSS-2022]; [@CET-List-2023]; [@Treasury-Cloud-Report-2023]). Industry/workforce data show persistent demand for Cloud/DevOps/Cyber **[B-01, pp. 3–5; B-02, pp. 6–9; B-03, pp. 9–12; B-05, pp. 8–15, 40–52; B-06, pp. 5–12, 28–37]** ([@CompTIA-Outlook-2025]; [@CompTIA-Workforce-2024]; [@CompTIA-TechJobs-2025-05]; [@WEF-Future-of-Jobs-2025]; [@Skillsoft-ITSS-2023]).  
+**Prong 2 — Well positioned.** Multi-cloud credentials and delivery record in **Infrastructure as Code (IaC)**, **CI/CD with policy-as-code**, **SBOM & artifact signing/provenance**, **Kubernetes/OpenShift (ARO) with GitOps**, and **Observability & Reliability** demonstrate ability to execute **[D-01–D-06; E-01; E-02]** (see also [@AWS-Cert-Paths-2025]).  
 **Prong 3 — Balance.** Waiving the job offer/labor certification avoids delays to **Zero-Trust**, **SBOM/signing**, and **disaster recovery (DR)** workstreams in critical systems, delivering measurable public-interest outcomes **[A-01; A-03; C-01; C-02]**.
 
 **Proposed outcomes (12–24 months).**  
@@ -128,14 +137,12 @@ Respectfully,
 **Gustavo de Oliveira Ferreira**  
 Cloud & DevOps Engineer (Self-Petitioner)
 
-<!-- COVER LETTER END -->
-
 [[PAGE BREAK]]
 
 # MAIN PETITION MEMORANDUM — FULL
 *EB-2 National Interest Waiver (NIW) — Gustavo de Oliveira Ferreira (Self-Petitioner)*
 
-> **Cross-reference legend.** In-text citations use **Annex-IDs** only (e.g., **[A-01, pp. 10–11]**). See **Section 6 — Evidence Index** for pages and how each item supports **Dhanasar Prongs 1–3**.
+> **Cross-reference legend.** In-text citations use **Annex-IDs** (e.g., **[A-01, pp. 10–11]**) and **bibliographic keys** (e.g., ([@NSS-2022])). See **Section 6 — Evidence Index** for Annex usage by Prong.
 
 ---
 
@@ -149,26 +156,28 @@ Cloud & DevOps Engineer (Self-Petitioner)
 
 ---
 
-## 1) Executive Summary
+## 1) Executive Summary  *[Binder start: p. 4]*
+*Faixa no binder: **pp. 4–4***
 
 **Endeavor.** Design and scale **secure multi-cloud platforms** and **enterprise software delivery** for U.S. organizations—especially those operating in or supporting **critical infrastructure**—using **Infrastructure as Code (IaC)**, **continuous integration/continuous delivery (CI/CD)** with **policy-as-code**, **software bill of materials (SBOM)** and **artifact signing/provenance**, **Kubernetes/OpenShift (ARO) with GitOps**, and **Observability & Reliability** (reliability engineering practices and **disaster recovery — DR**).
 
-**National importance.** Federal strategy eleva **cybersecurity** e **resiliência de infraestrutura crítica** a prioridades nacionais **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]**. A agenda de **Critical & Emerging Technologies** vincula software seguro e computação escalável a fundações robustas de cloud/CI-CD **[A-02, pp. 2–3]**. **Industry data** confirma demanda persistente por Cloud/DevOps/Cyber **[B-01, pp. 3–5; B-02, pp. 6–9; B-03, pp. 9–12; B-05, pp. 8–15, 40–52; B-06, pp. 5–12, 28–37]**. Padrões (e.g., **NIST/FedRAMP**) impulsionam **automação** e **policy-as-code** **[C-01, pp. 1–3; C-02, pp. 1–3]**.
+**National importance.** Federal strategy elevates **cybersecurity** and **critical infrastructure resilience** to national priorities **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]** and policy agendas link **secure software** and **scalable compute** to robust cloud/CI-CD foundations **[A-02, pp. 2–3]**. Industry data confirms persistent demand for Cloud/DevOps/Cyber **[B-01, pp. 3–5; B-02, pp. 6–9; B-03, pp. 9–12; B-05, pp. 8–15, 40–52; B-06, pp. 5–12, 28–37]** ([@CompTIA-Outlook-2025]; [@CompTIA-Workforce-2024]; [@CompTIA-TechJobs-2025-05]; [@WEF-Future-of-Jobs-2025]; [@Skillsoft-ITSS-2023]). Standards (e.g., **NIST/FedRAMP**) drive **automation** and **policy-as-code** **[C-01, pp. 1–3; C-02, pp. 1–3]**.
 
-**Position to advance.** Multi-cloud credentials e entregas em **IaC**, **CI/CD + SBOM/signing**, **Kubernetes/ARO + GitOps**, **Observability & Reliability** demonstram prontidão **[D-01–D-06]**.
+**Position to advance.** Multi-cloud credentials and deliveries in **IaC**, **CI/CD + SBOM/signing**, **Kubernetes/ARO + GitOps**, **Observability & Reliability** demonstrate readiness **[D-01–D-06]** (see also ([@AWS-Cert-Paths-2025])).
 
-**Balance (public interest).** Waiver acelera **Zero-Trust**, **SBOM/signing**, **DR** e fundações compliant em sistemas de interesse público **[A-01; A-03; C-01; C-02]**.
+**Balance (public interest).** Waiver accelerates **Zero-Trust**, **SBOM/signing**, **DR** and compliant foundations in public-interest systems **[A-01; A-03; C-01; C-02]**.
 
 **12–24-month outcomes & KPIs.**  
-• Landing zones (AWS/Azure) via **IaC** mapeadas a **NIST/FedRAMP** **[C-01; C-02]**  
-• **CI/CD** com **policy-as-code**, **SBOM** e **signing/provenance**  
-• **Kubernetes/ARO** multi-cluster com **GitOps** + guardrails  
-• **Observability & Reliability** (targets, runbooks, **DR** testado)  
-**KPIs:** lead time ↓ 50%; change failure ↓ 30%; MTTR ↓ 40%; **SLO ≥ 95%**; **≥85%** controles automatizados (IaC); **≥85%** serviços com **SBOM/signing**.
+• Landing zones (AWS/Azure) via **IaC** mapped to **NIST/FedRAMP** **[C-01; C-02]**  
+• **CI/CD** with **policy-as-code**, **SBOM** and **signing/provenance**  
+• **Kubernetes/ARO** multi-cluster with **GitOps** + guardrails  
+• **Observability & Reliability** (targets, runbooks, **DR** tested)  
+**KPIs:** lead time ↓ 50%; change failure ↓ 30%; MTTR ↓ 40%; **SLO ≥ 95%**; **≥85%** automated controls (IaC); **≥85%** services with **SBOM/signing**.
 
 ---
 
-## 2) Background & Qualifications
+## 2) Background & Qualifications  *[Binder start: p. 5]*
+*Faixa no binder: **pp. 5–5***
 
 ### 2.0 Professional Summary
 Cloud & DevOps Engineer entregando **plataformas cloud seguras** (AWS/Azure) e **CI/CD corporativo** com **policy-as-code**, **SBOM/signing**, **Kubernetes/OpenShift (ARO) com GitOps**, e **Observability & Reliability** (reliability engineering, incident response, **DR**). Mapeamento de **NIST/FedRAMP** em **IaC** para ambientes regulados **[C-01; C-02]**. Evidências em **[D-01]–[D-06]**.
@@ -207,6 +216,8 @@ Cloud & DevOps Engineer entregando **plataformas cloud seguras** (AWS/Azure) e *
 - **Microsoft Azure Administrator (AZ-104)** — [D-05] *(12/2024–01/2026)*  
 - **Academic Evaluation (AEE)** — [D-07] *(equivalência B.S. in Information Systems)*
 
+**Contexto e renovação.** As trilhas oficiais da AWS orientam manutenção/renovação e posicionamento por função (Architect/Developer/DevOps/Security), alinhadas à prática contínua de **cloud-first** ([@AWS-Cert-Paths-2025]). Evidência setorial demonstra **correlação entre certificação e melhores outcomes** de carreira/remuneração e redução de “skills gap”, apoiando o plano de **recertificação** e **upskilling** propostos ([@Skillsoft-ITSS-2023]; [@CompTIA-Workforce-2024]).
+
 ### 2.3 Competency Matrix — Condensed
 | Area | Core skills/tools | Primary cert evidence | Supporting evidence | Outcomes/KPIs |
 |---|---|---|---|---|
@@ -219,7 +230,8 @@ Cloud & DevOps Engineer entregando **plataformas cloud seguras** (AWS/Azure) e *
 
 ---
 
-## 3) Proposed Endeavor (Cloud & DevOps)
+## 3) Proposed Endeavor (Objectives, Workstreams, KPIs)  *[Binder start: p. 6]*
+*Faixa no binder: **pp. 6–6***
 
 ### 3.0 Goal
 Design and scale **secure multi-cloud platforms** and **enterprise software delivery** to improve **reliability, security, and speed of delivery** for U.S. organizations in **critical infrastructure**.
@@ -247,7 +259,8 @@ Design and scale **secure multi-cloud platforms** and **enterprise software deli
 
 ### 3.4 Governance & Control Mapping
 **Frameworks:** **NIST SP 800-53** (AC, AU, CM, CP, IA, SC, SI); **FedRAMP** baselines; supply-chain safeguards (**SBOM, signing, provenance**) **[C-01; C-02]**.  
-**Artifacts:** Control mappings embutidos em **IaC**; **policy-as-code** repos; exports de evidência automatizados.
+**Artifacts:** Control mappings embutidos em **IaC**; **policy-as-code** repos; exports de evidência automatizados.  
+Esse mapeamento integra controles **NIST SP 800-53/FedRAMP** e salvaguardas de **software supply-chain** ao pipeline e à **IaC**, atendendo diretrizes federais de risco/governança em cloud ([@Treasury-Cloud-Report-2023]) e prioridades nacionais para resiliência e segurança ([@NSS-2022]; [@CET-List-2023]).
 
 ### 3.5 Risks & Mitigations (excerpt)
 Vendor lock-in → IaC modular/multi-cloud; Skills gap → enablement tracks/runbooks; Permission sprawl → least-privilege + policy automation; Supply-chain exposure → **SBOM + signing/provenance**; Cost overruns → FinOps guardrails.
@@ -258,10 +271,11 @@ Exit: times autônomos em pipelines/GitOps; SLOs embed; IaC ownership; auditoria
 
 ---
 
-## 4) National Interest (Matter of Dhanasar)
+## 4) National Interest (Matter of Dhanasar)  *[Binder start: p. 7]*
+*Faixa no binder: **pp. 7–7***
 
 ### 4.1 Prong 1 — Substantial Merit & National Importance
-Federal strategy documents elevam **cyber** e **critical infrastructure** como imperativos nacionais **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]**. A **CET** destaca capacidades habilitadas por cloud/CI-CD (software seguro, compute escalável) **[A-02, pp. 2–3]**. Padrões/compliance (NIST/FedRAMP; supply-chain safeguards) tornam **automação** e **policy-as-code** uma necessidade em escala **[C-01, pp. 1–3; C-02, pp. 1–3]**. **Industry data** confirma demanda persistente **[B-01–B-03, B-05–B-06]**.  
+Federal strategy documents elevam **cyber** e **critical infrastructure** como imperativos nacionais **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]**. A **CET** destaca capacidades habilitadas por cloud/CI-CD (software seguro, compute escalável) **[A-02, pp. 2–3]**. Padrões/compliance (NIST/FedRAMP; supply-chain safeguards) tornam **automação** e **policy-as-code** uma necessidade em escala **[C-01, pp. 1–3; C-02, pp. 1–3]**. **Industry data** confirma demanda persistente **[B-01–B-03, B-05–B-06]** ([@CompTIA-Outlook-2025]; [@CompTIA-Workforce-2024]; [@CompTIA-TechJobs-2025-05]; [@WEF-Future-of-Jobs-2025]; [@Skillsoft-ITSS-2023]).  
 **Conclusão:** substantial merit & national importance.
 
 ### 4.2 Prong 2 — Well Positioned to Advance the Endeavor
@@ -281,7 +295,8 @@ Waiver evita atrasos na implantação de **Zero-Trust**, **SBOM/signing**, **DR*
 
 ---
 
-## 5) Implementation Plan & Timeline (Detailed)
+## 5) Implementation Plan & Timeline (Detailed)  *[Binder start: p. 8]*
+*Faixa no binder: **pp. 8–8***
 
 ### 5.1 Scope & Assumptions
 **Scope:** Foundations (AWS/Azure) com **IaC** mapeado a **NIST/FedRAMP** **[C-01; C-02]**; **CI/CD** com **policy-as-code**, **SBOM/signing** **[C-03]**; **Kubernetes/ARO + GitOps**; **Observability & Reliability** com **DR** **[C-04]**.  
@@ -318,7 +333,8 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 
 ---
 
-## 6) Evidence Index (Final, Numbered)
+## 6) Evidence Index (Final, Numbered)  *[Binder start: p. 9]*
+*Faixa no binder: **pp. 9–9***
 
 ### A — Policy / Strategy
 - **A-01** — *National Security Strategy (10/2022)* — **pp. 6, 10–11** — temas: cybersecurity; **critical infrastructure** — §§1, 3, 4, 5.  
@@ -360,8 +376,8 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 - **G-02** — Timeline Real (empregadores/cidades)  
 - **G-03** — Five-Year Roadmap (2025–2030) com KPIs  
 - **G-04** — Certification Maintenance Plan  
-- **G-90** — CTPS Digital (vínculos/cargos/datas/cidades)  
-- **G-91** — Payslip (último mês)
+- **G-90** — CTPS Digital (vínculos/cargos/datas/cidades) — **pp. 721–727**  
+- **G-91** — Payslip (último mês) — **p. 728**
 
 ---
 
@@ -389,7 +405,8 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 | E-02 | LOR — José R. Ferrazza | 1–2 | P2 |
 | F-01… | Projetos/Outputs (se houver) | — | P2, P3 |
 | G-01…G-04 | Career Pathway & Plan | — | P2, P3 |
-| G-90/G-91 | CTPS/Payslip (employment) | — | P2 |
+| **G-90** | **CTPS Digital (employment)** | **721–727** | **P2** |
+| **G-91** | **Payslip (último mês)** | **728** | **P2** |
 
 ---
 
@@ -465,7 +482,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 **Inclui (exemplos):**  
 - **E-01 — Carlos Feitosa (Cognizant)**  
 - **E-02 — José R. Ferrazza (DXC)**  
-**Inserir aqui:** *Letter_of_Recommendation_JoséRicardoFerrazza_latest (1).pdf*; *Recommendation_Letter_Gustavo_Ferreira____Carlos_Feitosa (1).pdf*.
+**Inserir aqui:** *Letter_of_Recommendation_JoséRicardoFerrazza_latest (1).pdf*; *RECOMMENDATION LETTER COGNIZANT_unlocked.pdf*.
 
 \vfill
 \hrule
@@ -493,7 +510,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 - **G-03 — Five-Year Roadmap (2025–2030) com KPIs**  
 - **G-04 — Certification Maintenance Plan**  
 - **G-90 — CTPS Digital** · **G-91 — Payslip (último mês)**  
-**Inserir aqui:** *carrear pathway 2025.drawio.pdf*; *CTPSDigital_...pdf*; *Demonstrativo de Pagamento-latest-month.pdf*.
+**Inserir aqui:** *carrear pathway 2025.drawio.pdf*; *CTPSDigital_unlocked.pdf* (**pp. 721–727**); *Demonstrativo de Pagamento-latest-month.pdf* (**p. 728**).
 
 \vfill
 \hrule

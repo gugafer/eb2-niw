@@ -6,7 +6,7 @@
     <link href="http://www.zotero.org/styles" rel="self"/>
     <author><name>Custom</name></author>
     <category citation-format="author-date"/>
-    <updated>2025-08-24T00:00:00+00:00</updated>
+    <updated>2025-08-23T00:00:00+00:00</updated>
   </info>
 
   <locale xml:lang="pt-BR">
@@ -23,13 +23,12 @@
 
   <macro name="author">
     <names variable="author">
-      <name form="long" and="symbol" delimiter=", " sort-separator=", "
-            initialize-with="." name-as-sort-order="all"/>
+      <name form="long" and="symbol" delimiter=", " sort-separator=", " name-as-sort-order="all"/>
+      <label form="short" prefix=", " text-case="lowercase" strip-periods="true"/>
       <substitute>
         <names variable="editor"/>
         <text variable="publisher"/>
         <text variable="container-title"/>
-        <text variable="title"/>
       </substitute>
     </names>
   </macro>
@@ -76,8 +75,7 @@
     </choose>
   </macro>
 
-  <citation collapse="year" et-al-min="4" et-al-use-first="1"
-            disambiguate-add-givenname="false" disambiguate-add-year-suffix="true">
+  <citation collapse="year" et-al-min="4" et-al-use-first="1" disambiguate-add-givenname="false" disambiguate-add-year-suffix="true">
     <sort>
       <key macro="author"/>
       <key macro="year"/>
