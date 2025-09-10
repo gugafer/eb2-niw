@@ -41,10 +41,10 @@
 | **C-02** | 2024-30983.pdf | 125 | 690-814 |
 | **C-03** | 2024-31372.pdf | 27 | 815-841 |
 | **C-04** | 0e111127-16a7-4ddc-969b-78c0502a58bc.pdf | 99 | 842-940 |
-| **D-01** | recommendation-letter-Gaurav-update-latest-signed.pdf | 3 | 941-943 | **[D-04]**
-| **D-02** | recommendation-letter-Babita-update-latest-signed.pdf | 2 | 944-945 | **[D-01]**
-| **D-03** | recommendation-letter-cognizant-carlos.pdf | 2 | 946-947 | **[D-03]**
-| **D-04** | recommendation-letter-phillip-bmg.pdf | 4 | 948-951 | **[D-06]**
+| **D-01** | recommendation-letter-Gaurav-update-latest-signed.pdf | 3 | 941-943 |
+| **D-02** | recommendation-letter-Babita-update-latest-signed.pdf | 2 | 944-945 |
+| **D-03** | recommendation-letter-cognizant-carlos.pdf | 2 | 946-947 |
+| **D-04** | recommendation-letter-phillip-bmg.pdf | 4 | 948-951 |
 | **D-05** | recommendation-letter-Bruno_english_serasa.pdf | 4 | 952-955 |
 | **D-06** | recommendation-letter-JoséRicardoFerrazza_latest.pdf | 4 | 956-959 |
 | **E-01** | CTPSDigital_unlocked.pdf | 7 | 960-966 |
@@ -641,7 +641,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 - **D-07** — *Academic Equivalency Evaluation (AEE)* — **pp. 1–3, 7–8** — §2.
 
 ### E — Letters of Recommendation
-- **E-01** — Carlos Feitosa (Cognizant) — pp. 1–2 — *“ticket killer”*, automação (↓30%), resiliência (↓50% downtime).   **[D-03]**
+- **E-01** — Carlos Feitosa (Cognizant) — pp. 1–2 — *“ticket killer”*, automação (↓30%), resiliência (↓50% downtime).  
 - **E-02** — José R. Ferrazza (DXC) — pp. 1–2 — CI/CD para telecom; +velocidade; −erros; certificações/plano.
 
 ### F — Projects / Outputs (se aplicável)
@@ -677,7 +677,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 | D-01…D-05 | AWS/Azure/CompTIA Certifications | 1–2 | P2 |
 | D-06 | Resume Snapshot (CV 2025) | — | P2 |
 | D-07 | AEE — Academic Equivalency | 1–3, 7–8 | P2 |
-| E-01 | LOR — Carlos Feitosa | 1–2 | P2, P3 | **[D-03]**
+| E-01 | LOR — Carlos Feitosa | 1–2 | P2, P3 |
 | E-02 | LOR — José R. Ferrazza | 1–2 | P2 |
 | F-01… | Projetos/Outputs (se houver) | — | P2, P3 |
 | G-01…G-04 | Career Pathway & Plan | — | P2, P3 |
@@ -755,7 +755,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 **O que é:** Cartas independentes que corroboram entregas (velocidade/qualidade), automação e confiabilidade.  
 **O que prova:** Reconhecimento por pares/gestores e impacto prático.  
 **Inclui (exemplos):**  
-- **E-01 — Carlos Feitosa (Cognizant)**   **[D-03]**
+- **E-01 — Carlos Feitosa (Cognizant)**  
 - **E-02 — José R. Ferrazza (DXC)**  
 **Inserir aqui:** *Letter_of_Recommendation_JoséRicardoFerrazza_latest (1).pdf*; *Recommendation_Letter_Gustavo_Ferreira____Carlos_Feitosa (1).pdf*.
 
@@ -919,27 +919,4 @@ Cloud & DevOps Engineer (Self-Petitioner)
 
 
 
-
-
-
-<!-- LETTER_MAP_START -->
-[D-01]: Babita (PDF: recommendation-letter-Babita-update-latest-signed.pdf)
-[D-02]: Bruno (PDF: recommendation-letter-Bruno_english_serasa.pdf)
-[D-03]: Carlos (PDF: recommendation-letter-cognizant-carlos.pdf)
-[D-04]: Gaurav (PDF: recommendation-letter-Gaurav-update-latest-signed.pdf)
-[D-05]: José Ricardo Ferrazza (PDF: recommendation-letter-JoséRicardoFerrazza_latest.pdf)
-[D-06]: Phillip (PDF: recommendation-letter-phillip-bmg.pdf)
-<!-- LETTER_MAP_END -->
-
-
-### Appendix B — Letters of Recommendation (updated)
-
-| Code  | Recommender                | File (Drive)                                             |
-|:-----:|----------------------------|----------------------------------------------------------|
-| D-01  | Babita                     | recommendation-letter-Babita-update-latest-signed.pdf    |
-| D-02  | Bruno                      | recommendation-letter-Bruno_english_serasa.pdf           |
-| D-03  | Carlos                     | recommendation-letter-cognizant-carlos.pdf               |
-| D-04  | Gaurav                     | recommendation-letter-Gaurav-update-latest-signed.pdf    |
-| D-05  | José Ricardo Ferrazza      | recommendation-letter-JoséRicardoFerrazza_latest.pdf     |
-| D-06  | Phillip                    | recommendation-letter-phillip-bmg.pdf                    |
 

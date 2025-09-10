@@ -41,10 +41,10 @@
 | **C-02** | 2024-30983.pdf | 125 | 690-814 |
 | **C-03** | 2024-31372.pdf | 27 | 815-841 |
 | **C-04** | 0e111127-16a7-4ddc-969b-78c0502a58bc.pdf | 99 | 842-940 |
-| **D-01** | recommendation-letter-Gaurav-update-latest-signed.pdf | 3 | 941-943 | **[D-04]**
-| **D-02** | recommendation-letter-Babita-update-latest-signed.pdf | 2 | 944-945 | **[D-01]**
-| **D-03** | recommendation-letter-cognizant-carlos.pdf | 2 | 946-947 | **[D-03]**
-| **D-04** | recommendation-letter-phillip-bmg.pdf | 4 | 948-951 | **[D-06]**
+| **D-01** | recommendation-letter-Gaurav-update-latest-signed.pdf | 3 | 941-943 |
+| **D-02** | recommendation-letter-Babita-update-latest-signed.pdf | 2 | 944-945 |
+| **D-03** | recommendation-letter-cognizant-carlos.pdf | 2 | 946-947 |
+| **D-04** | recommendation-letter-phillip-bmg.pdf | 4 | 948-951 |
 | **D-05** | recommendation-letter-Bruno_english_serasa.pdf | 4 | 952-955 |
 | **D-06** | recommendation-letter-JoséRicardoFerrazza_latest.pdf | 4 | 956-959 |
 | **E-01** | CTPSDigital_unlocked.pdf | 7 | 960-966 |
@@ -117,69 +117,25 @@ Policy/Strategy: **[A-01, pp. 6,10–11]**, **[A-02, pp. 2–3]**, **[A-03, pp. 
 **Why it matters:** fewer outages and breaches; faster safe updates; audit-ready evidence. Aligns with **cyber/critical infrastructure** priorities **[A-01, pp. 6,10–11; A-03, pp. 1,3–4]** and control families used by agencies **[C-01; C-02]**.
 
 ## 1) Proposed Endeavor & Outcomes (12–24 months)
-
-
 **Goal:** Design and scale **secure multi-cloud platforms** and **enterprise software delivery** for organizations operating in or supporting **critical infrastructure**.
 
-
-
-
-
 **Workstreams → Deliverables**  
-
-
-**WS-1 Cloud Foundations (AWS/Azure).** Identity/network/encryption/logging via **IaC**; **control-to-implementation matrix** mapped to **NIST/FedRAMP** **[C-01;\  C-02;\  C-03]**.  
-
-
-**WS-2 CI/CD & Software Supply-Chain.** **policy-as-code**, **SBOM**, **artifact signing/provenance**; compliance dashboard.   **[C-02]**
-
-
-**WS-3 Kubernetes/OpenShift (ARO).** Multi-cluster **GitOps**, OPA/PodSecurity; image hardening; **DR runbooks**.   **[C-03]**
-
-
-**WS-4 Observability & Reliability.** SLOs, incident mgmt, **DR** multi-region and game-days **[C-04;\  B-05]**. **[B-06]**
-
-
-
-
+**WS-1 Cloud Foundations (AWS/Azure).** Identity/network/encryption/logging via **IaC**; **control-to-implementation matrix** mapped to **NIST/FedRAMP** **[C-01; C-02]**.  
+**WS-2 CI/CD & Software Supply-Chain.** **policy-as-code**, **SBOM**, **artifact signing/provenance**; compliance dashboard.  
+**WS-3 Kubernetes/OpenShift (ARO).** Multi-cluster **GitOps**, OPA/PodSecurity; image hardening; **DR runbooks**.  
+**WS-4 Observability & Reliability.** SLOs, incident mgmt, **DR** multi-region and game-days **[C-04]**.
 
 **Milestones & KPIs**  
-
-
-M1 (90d): **≥70%** controls via **IaC**; logging/KMS ready **[C-01;\  C-02;\  C-03]**  
-
-
+M1 (90d): **≥70%** controls via **IaC**; logging/KMS ready **[C-01; C-02]**  
 M2 (120–150d): **≥80%** services with **SBOM + signing**  
-
-
-M3 (180d): **2–3** ARO/K8s clusters in prod; **MTTR ↓ 30%**   **[B-05;\  B-06]**
-
-
-M4 (9–12m): SLOs formalized; **P1 incidents ↓ 25%**; **DR ≥ 2 regions** tested **[C-04;\  B-05]**   **[B-06]**
-
-
-M5 (12–24m): Automated compliance evidence; **lead time ↓ 50%**; **change failure ↓ 30%** **[B-05;\  B-06]**
-
-
-
-
-
+M3 (180d): **2–3** ARO/K8s clusters in prod; **MTTR ↓ 30%**  
+M4 (9–12m): SLOs formalized; **P1 incidents ↓ 25%**; **DR ≥ 2 regions** tested **[C-04]**  
+M5 (12–24m): Automated compliance evidence; **lead time ↓ 50%**; **change failure ↓ 30%**
 
 ## 2) Matter of Dhanasar — Officer-MIN
-
-
-**Prong 1 — National importance.** Strategy/policy: **NSS 2022** (**cyber/critical infrastructure**) **[A-01;\   C-02]**; **CET** (**secure software/compute**) **[A-02;\  C-03]**; federal refs **[A-03]**. Standards: **NIST/FedRAMP** require automation **[C-01; C-02]**. Workforce: persistent demand **[B-01–B-03, B-05–B-06]**.  
-
-
+**Prong 1 — National importance.** Strategy/policy: **NSS 2022** (**cyber/critical infrastructure**) **[A-01]**; **CET** (**secure software/compute**) **[A-02]**; federal refs **[A-03]**. Standards: **NIST/FedRAMP** require automation **[C-01; C-02]**. Workforce: persistent demand **[B-01–B-03, B-05–B-06]**.  
 **Prong 2 — Well positioned.** Multi-cloud credentials + delivery in **IaC**, **CI/CD + SBOM/signing**, **Kubernetes/ARO**, **Observability & Reliability** **[D-01–D-06]**.  
-
-
-**Prong 3 — Balance.** NIW evita atrasos em **Zero-Trust**, **SBOM/signing**, **DR**; acelera benefícios de interesse público **[A-01;\  A-03;\  C-01;\  C-02;\  C-04]**.
-
-
-
-
-
+**Prong 3 — Balance.** NIW evita atrasos em **Zero-Trust**, **SBOM/signing**, **DR**; acelera benefícios de interesse público **[A-01; A-03; C-01; C-02]**.
 
 ## 3) Evidence Map — Quick Cross-Refs (Annex-IDs)
 
@@ -254,215 +210,73 @@ Cloud & DevOps Engineer (Self-Petitioner)
 
 ## 1) Executive Summary
 
-
-
-
-
 **Endeavor.** Design and scale **secure multi-cloud platforms** and **enterprise software delivery** for U.S. organizations—especially those operating in or supporting **critical infrastructure**—using **Infrastructure as Code (IaC)**, **continuous integration/continuous delivery (CI/CD)** with **policy-as-code**, **software bill of materials (SBOM)** and **artifact signing/provenance**, **Kubernetes/OpenShift (ARO) with GitOps**, and **Observability & Reliability** (reliability engineering practices and **disaster recovery — DR**).
-
-
-
-
 
 **National importance.** Federal strategy eleva **cybersecurity** e **resiliência de infraestrutura crítica** a prioridades nacionais **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]**. A agenda de **Critical & Emerging Technologies** vincula software seguro e computação escalável a fundações robustas de cloud/CI-CD **[A-02, pp. 2–3]**. **Industry data** confirma demanda persistente por Cloud/DevOps/Cyber **[B-01, pp. 3–5; B-02, pp. 6–9; B-03, pp. 9–12; B-05, pp. 8–15, 40–52; B-06, pp. 5–12, 28–37]**. Padrões (e.g., **NIST/FedRAMP**) impulsionam **automação** e **policy-as-code** **[C-01, pp. 1–3; C-02, pp. 1–3]**.
 
-
-
-
-
 **Position to advance.** Multi-cloud credentials e entregas em **IaC**, **CI/CD + SBOM/signing**, **Kubernetes/ARO + GitOps**, **Observability & Reliability** demonstram prontidão **[D-01–D-06]**.
-
-
-
-
 
 **Balance (public interest).** Waiver acelera **Zero-Trust**, **SBOM/signing**, **DR** e fundações compliant em sistemas de interesse público **[A-01; A-03; C-01; C-02]**.
 
-
-
-
-
 **12–24-month outcomes & KPIs.**  
-
-
 • Landing zones (AWS/Azure) via **IaC** mapeadas a **NIST/FedRAMP** **[C-01; C-02]**  
-
-
 • **CI/CD** com **policy-as-code**, **SBOM** e **signing/provenance**  
-
-
 • **Kubernetes/ARO** multi-cluster com **GitOps** + guardrails  
-
-
 • **Observability & Reliability** (targets, runbooks, **DR** testado)  
-
-
-**KPIs:** lead time ↓ 50%; change failure ↓ 30%; MTTR ↓ 40%; **SLO ≥ 95%**; **≥85%** controles automatizados (IaC); **≥85%** serviços com **SBOM/signing**. **[B-05;\  B-06]**
-
-
-
-
+**KPIs:** lead time ↓ 50%; change failure ↓ 30%; MTTR ↓ 40%; **SLO ≥ 95%**; **≥85%** controles automatizados (IaC); **≥85%** serviços com **SBOM/signing**.
 
 ---
-
-
-
-
-
 
 ## 2) Background & Qualifications
 
-
-
-
-
 ### 2.0 Professional Summary
-
-
 Cloud & DevOps Engineer entregando **plataformas cloud seguras** (AWS/Azure) e **CI/CD corporativo** com **policy-as-code**, **SBOM/signing**, **Kubernetes/OpenShift (ARO) com GitOps**, e **Observability & Reliability** (reliability engineering, incident response, **DR**). Mapeamento de **NIST/FedRAMP** em **IaC** para ambientes regulados **[C-01; C-02]**. Evidências em **[D-01]–[D-06]**.
 
-
-
-
-
 ### 2.1 Career Progression (timeline verificada)
-
-
 - **03/2023 – atual — Cognizant Serviços de Tecnologia** · São Paulo/SP (remoto) — **Arquiteto de Soluções**  
-
-
   **Foco:** Azure DevOps, governança de branches, **CI/CD** (.NET/Java/Node), **GitOps (ArgoCD)**, **SonarQube**, **Artifactory/Xray**, automações Bash/Python, observability & reliability.  
-
-
   **Evidência:** [G-90 CTPS Digital; G-91 Payslips; D-06 CV; E-01/E-02 LORs].  
-
-
   **Resultados:** ↓ downtime e ↑ eficiência (ex.: ↓50% incidentes críticos) [E-01/E-02].
 
-
-
-
-
 - **09/2022 – 03/2023 — ACT Consultoria em Tecnologia** · Alphaville/Barueri/SP — **Senior DevOps Engineer (IaC)**  
-
-
   **Foco:** **Terraform/Ansible**, módulos padronizados, CI/CD, governança para setor financeiro.  
-
-
   **Evidência:** [G-90; D-06].
 
-
-
-
-
 - **02/2022 – 09/2022 — GFT Brasil** · Alphaville/Barueri/SP — **Analista de Sistemas III**  
-
-
   **Foco:** pipelines, migrações e modernização de apps.  
-
-
   **Evidência:** [G-90].
-
-
-
-
 
 - **12/2021 – 02/2022 — NAVA Serviços & Outsourcing** · Alphaville/Barueri/SP — **Analista DevOps II**  
-
-
   **Foco:** CI/CD, IaC, automações de build/release.  
-
-
   **Evidência:** [G-90].
-
-
-
-
 
 - **06/2021 – 08/2021 — Fundação CAEd** · Juiz de Fora/MG — **Analista de Desenvolvimento Web VI**  
-
-
   **Foco:** APIs, performance e segurança.  
-
-
   **Evidência:** [G-90].
 
-
-
-
-
 - **06/2020 – 08/2021 — Space One Labs (freelance/blog)** — **Conteúdo técnico**  
-
-
   **Foco:** artigos práticos em **Cloud/DevOps**.  
-
-
   **Evidência:** [D-06 CV].
 
-
-
-
-
 ### 2.2 Certifications & Training
-
-
 - **AWS DevOps Engineer – Professional** — [D-01] *(recert até 03/2026)*  
-
-
 - **AWS Developer – Associate** — [D-02] *(recert até 03/2026)*  
-
-
 - **AWS Solutions Architect – Associate** — [D-03] *(2019–2024)*  
-
-
 - **CompTIA Cloud+ ce** — [D-04] *(2019–2028)*  
-
-
 - **Microsoft Azure Administrator (AZ-104)** — [D-05] *(12/2024–01/2026)*  
-
-
 - **Academic Evaluation (AEE)** — [D-07] *(equivalência B.S. in Information Systems)*
 
-
-
-
-
 ### 2.3 Competency Matrix — Condensed
-
-
 | Area | Core skills/tools | Primary cert evidence | Supporting evidence | Outcomes/KPIs |
-
-
 |---|---|---|---|---|
-
-
 | **Cloud Architecture (AWS/Azure)** | Landing zones, VPC/VNet, IAM/AAD, keys, DR/HA | **[D-01] [D-03] [D-05]** | **[C-01] [C-02] [D-06]** | IaC baselines; ≥**85%** controls automated; DR ≥2 regions |
-
-
 | **Containers & Orchestration** | Kubernetes/OpenShift (**ARO**), GitOps, OPA/PodSecurity | **[D-01] [D-04]** | **[D-06]** | Prod multi-cluster; **MTTR ↓ 30%** |
-
-
 | **DevOps & CI/CD** | Pipelines, artifacts, testing gates, releases | **[D-01] [D-02]** | **[C-01] [C-02] [D-06]** | ≥**80%** services with **SBOM/signing** |
-
-
 | **Security & Zero-Trust** | Identity-centric controls, key rotation, hardening | **[D-01] [D-05]** | **[C-01] [C-03]** | Change-failure ↓; vuln remediation time ↓ |
-
-
 | **Observability & Reliability** | SLIs/SLOs, incident mgmt, DR drills | — | **[C-04] [D-06]** | **SLO ≥95%**; P1 incidents ↓ **25%** |
-
-
 | **Compliance as Code** | Control mappings, policy-as-code in IaC | **[D-01] [D-04]** | **[C-01] [C-02]** | Automated audit evidence; policy violations ↓ |
 
-
-
-
-
 ---
-
-
-
-
-
 
 ## 3) Proposed Endeavor (Cloud & DevOps)
 
@@ -505,73 +319,26 @@ Exit: times autônomos em pipelines/GitOps; SLOs embed; IaC ownership; auditoria
 
 ## 4) National Interest (Matter of Dhanasar)
 
-
-
-
-
-### 4.1 Prong 1 — Substantial Merit & National Importance **[C-01;\  C-02]** **[C-03]**
-
-
-Federal strategy documents elevam **cyber** e **critical infrastructure** como imperativos nacionais **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]**. A **CET** destaca capacidades habilitadas por cloud/CI-CD (software seguro, compute escalável) **[A-02, pp. 2–3]**. Padrões/compliance (NIST/FedRAMP; supply-chain safeguards) tornam **automação** e **policy-as-code** uma necessidade em escala **[C-01, pp. 1–3; C-02, pp. 1–3]**. **Industry data** confirma demanda persistente **[B-01–B-03, B-05–B-06]**.   **[C-04;\  C-03]**
-
-
+### 4.1 Prong 1 — Substantial Merit & National Importance
+Federal strategy documents elevam **cyber** e **critical infrastructure** como imperativos nacionais **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]**. A **CET** destaca capacidades habilitadas por cloud/CI-CD (software seguro, compute escalável) **[A-02, pp. 2–3]**. Padrões/compliance (NIST/FedRAMP; supply-chain safeguards) tornam **automação** e **policy-as-code** uma necessidade em escala **[C-01, pp. 1–3; C-02, pp. 1–3]**. **Industry data** confirma demanda persistente **[B-01–B-03, B-05–B-06]**.  
 **Conclusão:** substantial merit & national importance.
 
-
-
-
-
-### 4.2 Prong 2 — Well Positioned to Advance the Endeavor **[D-01]**
-
-
+### 4.2 Prong 2 — Well Positioned to Advance the Endeavor
 Certificações multi-cloud e histórico em **IaC**, **CI/CD + SBOM/signing**, **Kubernetes/ARO + GitOps**, **Observability & Reliability** documentados **[D-01–D-06]**; alinhamento a frameworks explícito **[C-01; C-02]**; **letters of recommendation** corroboram (**[E-01; E-02]**).  
-
-
 **Conclusão:** well positioned.
 
-
-
-
-
-### 4.3 Prong 3 — On Balance, Beneficial to Waive the Job Offer/Labor Certification **[C-01;\  C-02]** **[C-04]**
-
-
-Waiver evita atrasos na implantação de **Zero-Trust**, **SBOM/signing**, **DR** e fundações compliant em sistemas públicos **[A-01; A-03; B-01–B-03; C-01; C-02]**.   **[C-02]**
-
-
+### 4.3 Prong 3 — On Balance, Beneficial to Waive the Job Offer/Labor Certification
+Waiver evita atrasos na implantação de **Zero-Trust**, **SBOM/signing**, **DR** e fundações compliant em sistemas públicos **[A-01; A-03; B-01–B-03; C-01; C-02]**.  
 **Conclusão:** balance favors the waiver.
 
-
-
-
-
 ### 4.4 Evidence Map by Prong
-
-
 | Prong | Purpose | Key Annex IDs (pages) |
-
-
 |---|---|---|
-
-
 | **1 — National importance** | Strategy & demand | **[A-01, pp. 6,10–11] [A-02, pp. 2–3] [A-03, pp. 1,3–4] [B-01, pp. 3–5] [B-02, pp. 6–9] [B-03, pp. 9–12] [B-05, pp. 8–15, 40–52] [B-06, pp. 5–12, 28–37] [C-01, pp. 1–3]** |
-
-
 | **2 — Positioning** | Credentials & execution | **[D-01–D-06] [C-01] [C-02]** *(letters: **[E-01; E-02]**)* |
-
-
 | **3 — Balance** | Public-interest benefit | **[A-01] [A-03] [B-01–B-03] [C-01] [C-02]** |
 
-
-
-
-
 ---
-
-
-
-
-
 
 ## 5) Implementation Plan & Timeline (Detailed)
 
@@ -641,7 +408,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 - **D-07** — *Academic Equivalency Evaluation (AEE)* — **pp. 1–3, 7–8** — §2.
 
 ### E — Letters of Recommendation
-- **E-01** — Carlos Feitosa (Cognizant) — pp. 1–2 — *“ticket killer”*, automação (↓30%), resiliência (↓50% downtime).   **[D-03]**
+- **E-01** — Carlos Feitosa (Cognizant) — pp. 1–2 — *“ticket killer”*, automação (↓30%), resiliência (↓50% downtime).  
 - **E-02** — José R. Ferrazza (DXC) — pp. 1–2 — CI/CD para telecom; +velocidade; −erros; certificações/plano.
 
 ### F — Projects / Outputs (se aplicável)
@@ -677,7 +444,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 | D-01…D-05 | AWS/Azure/CompTIA Certifications | 1–2 | P2 |
 | D-06 | Resume Snapshot (CV 2025) | — | P2 |
 | D-07 | AEE — Academic Equivalency | 1–3, 7–8 | P2 |
-| E-01 | LOR — Carlos Feitosa | 1–2 | P2, P3 | **[D-03]**
+| E-01 | LOR — Carlos Feitosa | 1–2 | P2, P3 |
 | E-02 | LOR — José R. Ferrazza | 1–2 | P2 |
 | F-01… | Projetos/Outputs (se houver) | — | P2, P3 |
 | G-01…G-04 | Career Pathway & Plan | — | P2, P3 |
@@ -755,7 +522,7 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 **O que é:** Cartas independentes que corroboram entregas (velocidade/qualidade), automação e confiabilidade.  
 **O que prova:** Reconhecimento por pares/gestores e impacto prático.  
 **Inclui (exemplos):**  
-- **E-01 — Carlos Feitosa (Cognizant)**   **[D-03]**
+- **E-01 — Carlos Feitosa (Cognizant)**  
 - **E-02 — José R. Ferrazza (DXC)**  
 **Inserir aqui:** *Letter_of_Recommendation_JoséRicardoFerrazza_latest (1).pdf*; *Recommendation_Letter_Gustavo_Ferreira____Carlos_Feitosa (1).pdf*.
 
@@ -918,28 +685,4 @@ Cloud & DevOps Engineer (Self-Petitioner)
 
 
 
-
-
-
-
-<!-- LETTER_MAP_START -->
-[D-01]: Babita (PDF: recommendation-letter-Babita-update-latest-signed.pdf)
-[D-02]: Bruno (PDF: recommendation-letter-Bruno_english_serasa.pdf)
-[D-03]: Carlos (PDF: recommendation-letter-cognizant-carlos.pdf)
-[D-04]: Gaurav (PDF: recommendation-letter-Gaurav-update-latest-signed.pdf)
-[D-05]: José Ricardo Ferrazza (PDF: recommendation-letter-JoséRicardoFerrazza_latest.pdf)
-[D-06]: Phillip (PDF: recommendation-letter-phillip-bmg.pdf)
-<!-- LETTER_MAP_END -->
-
-
-### Appendix B — Letters of Recommendation (updated)
-
-| Code  | Recommender                | File (Drive)                                             |
-|:-----:|----------------------------|----------------------------------------------------------|
-| D-01  | Babita                     | recommendation-letter-Babita-update-latest-signed.pdf    |
-| D-02  | Bruno                      | recommendation-letter-Bruno_english_serasa.pdf           |
-| D-03  | Carlos                     | recommendation-letter-cognizant-carlos.pdf               |
-| D-04  | Gaurav                     | recommendation-letter-Gaurav-update-latest-signed.pdf    |
-| D-05  | José Ricardo Ferrazza      | recommendation-letter-JoséRicardoFerrazza_latest.pdf     |
-| D-06  | Phillip                    | recommendation-letter-phillip-bmg.pdf                    |
 

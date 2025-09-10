@@ -109,17 +109,23 @@ href="#4-national-interest-matter-of-dhanasar-secnational-interest"
 id="toc-4-national-interest-matter-of-dhanasar-secnational-interest">4.
 National Interest (Matter of Dhanasar) {#sec:national-interest}</a>
 <ul>
-<li><a href="#41-prong-1--substantial-merit--national-importance"
-id="toc-41-prong-1--substantial-merit--national-importance">4.1 Prong 1
-— Substantial Merit &amp; National Importance</a></li>
-<li><a href="#42-prong-2--well-positioned-to-advance-the-endeavor"
-id="toc-42-prong-2--well-positioned-to-advance-the-endeavor">4.2 Prong 2
-— Well Positioned to Advance the Endeavor</a></li>
 <li><a
-href="#43-prong-3--on-balance-waiving-labor-certification-benefits-the-us"
-id="toc-43-prong-3--on-balance-waiving-labor-certification-benefits-the-us">4.3
-Prong 3 — On Balance, Waiving Labor Certification Benefits the
-U.S.</a></li>
+href="#41-prong-1--substantial-merit--national-importance-c-01-c-02-c-03"
+id="toc-41-prong-1--substantial-merit--national-importance-c-01-c-02-c-03">4.1
+Prong 1 — Substantial Merit &amp; National Importance <strong>[C-01;\
+C-02]</strong> <strong>[C-03]</strong></a></li>
+<li><a href="#42-prong-2--well-positioned-to-advance-the-endeavor-d-01"
+id="toc-42-prong-2--well-positioned-to-advance-the-endeavor-d-01">4.2
+Prong 2 — Well Positioned to Advance the Endeavor
+<strong>D-01</strong></a></li>
+<li><a
+href="#43-prong-3--on-balance-waiving-labor-certification-benefits-the-us-c-01-c-02-c-04"
+id="toc-43-prong-3--on-balance-waiving-labor-certification-benefits-the-us-c-01-c-02-c-04">4.3
+Prong 3 — On Balance, Waiving Labor Certification Benefits the U.S.
+<strong>[C-01;\ C-02]</strong> <strong>[C-04]</strong></a></li>
+<li><a href="#appendix-b--letters-of-recommendation-updated"
+id="toc-appendix-b--letters-of-recommendation-updated">Appendix B —
+Letters of Recommendation (updated)</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -257,53 +263,56 @@ agencies <strong>[C-01; C-02]</strong>.</p>
 platforms</strong> and <strong>enterprise software delivery</strong> for
 organizations operating in or supporting <strong>critical
 infrastructure</strong>.</p>
-<p><strong>Workstreams → Deliverables</strong><br />
-<strong>WS-1 Cloud Foundations (AWS/Azure).</strong>
+<p><strong>Workstreams → Deliverables</strong></p>
+<p><strong>WS-1 Cloud Foundations (AWS/Azure).</strong>
 Identity/network/encryption/logging via <strong>IaC</strong>;
 <strong>control-to-implementation matrix</strong> mapped to
-<strong>NIST/FedRAMP</strong> <strong>[C-01; C-02]</strong> (cf.
-[@Treasury-Cloud-2023]).<br />
-<strong>WS-2 CI/CD &amp; Software Supply Chain.</strong>
+<strong>NIST/FedRAMP</strong> <strong>[C-01;\ C-02;\ C-03]</strong> (cf.
+[@Treasury-Cloud-2023]).</p>
+<p><strong>WS-2 CI/CD &amp; Software Supply Chain.</strong>
 <strong>policy-as-code</strong>, <strong>SBOM</strong>, <strong>artifact
-signing/provenance</strong>; compliance dashboard.<br />
-<strong>WS-3 Kubernetes/OpenShift (ARO).</strong> Multi-cluster
+signing/provenance</strong>; compliance dashboard.
+<strong>[C-02]</strong></p>
+<p><strong>WS-3 Kubernetes/OpenShift (ARO).</strong> Multi-cluster
 <strong>GitOps</strong>, OPA/PodSecurity; image hardening; <strong>DR
-runbooks</strong>.<br />
-<strong>WS-4 Observability &amp; Reliability.</strong> SLOs, incident
-mgmt, <strong>DR</strong> multi-region and game-days
-<strong>[C-04]</strong>.</p>
-<p><strong>Milestones &amp; KPIs</strong><br />
-M1 (90d): <strong>≥70%</strong> controls via <strong>IaC</strong>;
-logging/KMS ready <strong>[C-01; C-02]</strong><br />
-M2 (120–150d): <strong>≥80%</strong> services with <strong>SBOM +
-signing</strong><br />
-M3 (180d): <strong>2–3</strong> ARO/K8s clusters in prod; <strong>MTTR ↓
-30%</strong><br />
-M4 (9–12m): SLOs formalized; <strong>P1 incidents ↓ 25%</strong>;
-<strong>DR ≥ 2 regions</strong> tested <strong>[C-04]</strong><br />
-M5 (12–24m): Automated compliance evidence; <strong>lead time ↓
-50%</strong>; <strong>change failure ↓ 30%</strong></p>
+runbooks</strong>. <strong>[C-03]</strong></p>
+<p><strong>WS-4 Observability &amp; Reliability.</strong> SLOs, incident
+mgmt, <strong>DR</strong> multi-region and game-days <strong>[C-04;\
+B-05]</strong>. <strong>[B-06]</strong></p>
+<p><strong>Milestones &amp; KPIs</strong></p>
+<p>M1 (90d): <strong>≥70%</strong> controls via <strong>IaC</strong>;
+logging/KMS ready <strong>[C-01;\ C-02;\ C-03]</strong></p>
+<p>M2 (120–150d): <strong>≥80%</strong> services with <strong>SBOM +
+signing</strong></p>
+<p>M3 (180d): <strong>2–3</strong> ARO/K8s clusters in prod;
+<strong>MTTR ↓ 30%</strong> <strong>[B-05;\ B-06]</strong></p>
+<p>M4 (9–12m): SLOs formalized; <strong>P1 incidents ↓ 25%</strong>;
+<strong>DR ≥ 2 regions</strong> tested <strong>[C-04;\ B-05]</strong>
+<strong>[B-06]</strong></p>
+<p>M5 (12–24m): Automated compliance evidence; <strong>lead time ↓
+50%</strong>; <strong>change failure ↓ 30%</strong> <strong>[B-05;\
+B-06]</strong></p>
 <h2 id="2-matter-of-dhanasar--officer-min">2) Matter of Dhanasar —
 Officer-MIN</h2>
 <p><strong>Prong 1 — National importance.</strong> Strategy/policy:
 <strong>NSS 2022</strong> (<strong>cyber/critical
-infrastructure</strong>) <strong>[A-01]</strong>; <strong>CET</strong>
-(<strong>secure software/compute</strong>) <strong>[A-02]</strong>;
-federal refs <strong>[A-03]</strong> (see also [@NSS-2022;
-@CET-List-2023; @Treasury-Cloud-2023]). Standards
+infrastructure</strong>) <strong>[A-01;\ C-02]</strong>;
+<strong>CET</strong> (<strong>secure software/compute</strong>)
+<strong>[A-02;\ C-03]</strong>; federal refs <strong>[A-03]</strong>
+(see also [@NSS-2022; @CET-List-2023; @Treasury-Cloud-2023]). Standards
 (<strong>NIST/FedRAMP</strong>) require automation <strong>[C-01;
 C-02]</strong>. Workforce: persistent demand <strong>[B-01–B-03,
 B-05–B-06]</strong> (cf. [@CompTIA-Outlook-2025;
 @CompTIA-Workforce-2024; @CompTIA-TechJobs-2025-05;
-@WEF-Future-of-Jobs-2025; @Skillsoft-ITSS-2023]).<br />
-<strong>Prong 2 — Well positioned.</strong> Multi-cloud credentials +
+@WEF-Future-of-Jobs-2025; @Skillsoft-ITSS-2023]).</p>
+<p><strong>Prong 2 — Well positioned.</strong> Multi-cloud credentials +
 delivery in <strong>IaC</strong>, <strong>CI/CD + SBOM/signing</strong>,
 <strong>Kubernetes/ARO</strong>, <strong>Observability &amp;
-Reliability</strong> <strong>[D-01–D-06]</strong>.<br />
-<strong>Prong 3 — Balance.</strong> NIW avoids delays in
+Reliability</strong> <strong>[D-01–D-06]</strong>.</p>
+<p><strong>Prong 3 — Balance.</strong> NIW avoids delays in
 <strong>Zero-Trust</strong>, <strong>SBOM/signing</strong>,
-<strong>DR</strong>; accelerates public-interest benefits <strong>[A-01;
-A-03; C-01; C-02]</strong>.</p>
+<strong>DR</strong>; accelerates public-interest benefits
+<strong>[A-01;\ A-03;\ C-01;\ C-02;\ C-04]</strong>.</p>
 <h2 id="3-evidence-map--quick-cross-refs-annex-ids">3) Evidence Map —
 Quick Cross-Refs (Annex-IDs)</h2>
 <table>
@@ -337,7 +346,8 @@ software/compute</td>
 </tr>
 <tr>
 <td><strong>Credentials/Profile</strong></td>
-<td><strong>[D-01]–[D-06]</strong></td>
+<td><strong><a href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a>–[D-06]</strong></td>
 <td>Readiness and track record</td>
 </tr>
 </tbody>
@@ -521,13 +531,20 @@ Training</h3>
 and CE/renewal cadence (cf. [@AWS-Cert-Paths-2025;
 @Skillsoft-ITSS-2023]).</p>
 <ul>
-<li><strong>AWS DevOps Engineer – Professional</strong> — [D-01]
+<li><strong>AWS DevOps Engineer – Professional</strong> — <a
+href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a>
 <em>(recert thru 03/2026)</em></li>
-<li><strong>AWS Developer – Associate</strong> — [D-02] <em>(recert thru
-03/2026)</em></li>
-<li><strong>AWS Solutions Architect – Associate</strong> — [D-03]
+<li><strong>AWS Developer – Associate</strong> — <a href="Bruno"
+title="PDF: recommendation-letter-Bruno_english_serasa.pdf">D-02</a>
+<em>(recert thru 03/2026)</em></li>
+<li><strong>AWS Solutions Architect – Associate</strong> — <a
+href="Carlos"
+title="PDF: recommendation-letter-cognizant-carlos.pdf">D-03</a>
 <em>(2019–2024)</em></li>
-<li><strong>CompTIA Cloud+ ce (ANAB/ISO 17024)</strong> — [D-04]
+<li><strong>CompTIA Cloud+ ce (ANAB/ISO 17024)</strong> — <a
+href="Gaurav"
+title="PDF: recommendation-letter-Gaurav-update-latest-signed.pdf">D-04</a>
 <em>(2019–2028)</em></li>
 <li><strong>Microsoft Azure Administrator (AZ-104)</strong> — [D-05]
 <em>(12/2024–01/2026)</em></li>
@@ -550,7 +567,11 @@ Condensed</h3>
 <tr>
 <td><strong>Cloud Architecture (AWS/Azure)</strong></td>
 <td>Landing zones, VPC/VNet, IAM/AAD, keys, DR/HA</td>
-<td><strong>[D-01] [D-03] [D-05]</strong></td>
+<td><strong><a href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a>
+<a href="Carlos"
+title="PDF: recommendation-letter-cognizant-carlos.pdf">D-03</a>
+[D-05]</strong></td>
 <td><strong>[C-01] [C-02] [D-06]</strong></td>
 <td>IaC baselines; ≥<strong>85%</strong> controls automated; DR ≥2
 regions</td>
@@ -558,14 +579,20 @@ regions</td>
 <tr>
 <td><strong>Containers &amp; Orchestration</strong></td>
 <td>Kubernetes/ARO, GitOps, OPA/PodSecurity</td>
-<td><strong>[D-01] [D-04]</strong></td>
+<td><strong><a href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a>
+<a href="Gaurav"
+title="PDF: recommendation-letter-Gaurav-update-latest-signed.pdf">D-04</a></strong></td>
 <td><strong>[D-06]</strong></td>
 <td>Prod multi-cluster; <strong>MTTR ↓ 30%</strong></td>
 </tr>
 <tr>
 <td><strong>DevOps &amp; CI/CD</strong></td>
 <td>Pipelines, artifacts, testing gates, releases</td>
-<td><strong>[D-01] [D-02]</strong></td>
+<td><strong><a href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a>
+<a href="Bruno"
+title="PDF: recommendation-letter-Bruno_english_serasa.pdf">D-02</a></strong></td>
 <td><strong>[C-01] [C-02] [D-06]</strong></td>
 <td>≥<strong>80%</strong> services with
 <strong>SBOM/signing</strong></td>
@@ -573,7 +600,9 @@ regions</td>
 <tr>
 <td><strong>Security &amp; Zero-Trust</strong></td>
 <td>Identity-centric controls, key rotation, hardening</td>
-<td><strong>[D-01] [D-05]</strong></td>
+<td><strong><a href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a>
+[D-05]</strong></td>
 <td><strong>[C-01] [C-03]</strong></td>
 <td>Change-failure ↓; vuln remediation time ↓</td>
 </tr>
@@ -587,7 +616,10 @@ regions</td>
 <tr>
 <td><strong>Compliance as Code</strong></td>
 <td>Control mappings, policy-as-code in IaC</td>
-<td><strong>[D-01] [D-04]</strong></td>
+<td><strong><a href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a>
+<a href="Gaurav"
+title="PDF: recommendation-letter-Gaurav-update-latest-signed.pdf">D-04</a></strong></td>
 <td><strong>[C-01] [C-02]</strong></td>
 <td>Automated audit evidence; policy violations ↓</td>
 </tr>
@@ -602,8 +634,8 @@ regions</td>
 <strong>reliability, security, and speed of delivery</strong> for U.S.
 organizations in <strong>critical infrastructure</strong>.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> Entrega mais rápida <strong>e
-segura</strong> de atualizações em setores críticos reduz
+<p><strong>Why it matters nationally:</strong> Entrega mais rápida
+<strong>e segura</strong> de atualizações em setores críticos reduz
 <strong>superfícies de ataque</strong> e <strong>tempo de
 indisponibilidade</strong> — alinhado com a <strong>NSS 2022</strong>
 (cibersegurança / infraestrutura crítica) e com a agenda de
@@ -618,8 +650,8 @@ serviços</strong>. <strong>[A-01]</strong></p>
 [C-02]</strong> (also Treasury Cloud governance
 <strong>[A-03]</strong>).</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> Mapeamento de <strong>controles
-NIST/FedRAMP</strong> diretamente no código acelera a
+<p><strong>Why it matters nationally:</strong> Mapeamento de
+<strong>controles NIST/FedRAMP</strong> diretamente no código acelera a
 <strong>conformidade federal</strong>, reduz <strong>erros
 humanos</strong> e cria bases reutilizáveis para <strong>órgãos e
 fornecedores</strong>. <strong>[C-01] [C-02] [A-03]</strong></p>
@@ -629,7 +661,7 @@ fornecedores</strong>. <strong>[C-01] [C-02] [A-03]</strong></p>
 generation/verification, and <strong>artifact
 signing/provenance</strong>.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>SBOM +
+<p><strong>Why it matters nationally:</strong> <strong>SBOM +
 assinatura/proveniência</strong> endereçam a <strong>EO 14028</strong> e
 fortalecem a <strong>cadeia de suprimentos de software</strong>,
 reduzindo risco sistêmico. <strong>[C-03] [A-01]</strong></p>
@@ -638,7 +670,7 @@ reduzindo risco sistêmico. <strong>[C-03] [A-01]</strong></p>
 <strong>multi-cluster</strong> with <strong>GitOps</strong> and
 guardrails (OPA/PodSecurity); harden images/runtime.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>GitOps</strong> e
+<p><strong>Why it matters nationally:</strong> <strong>GitOps</strong> e
 <strong>políticas declarativas</strong> padronizam operações, melhoram
 <strong>auditabilidade</strong> e reduzem <strong>MTTR</strong> em
 ambientes críticos. <strong>[C-01]</strong></p>
@@ -647,10 +679,11 @@ ambientes críticos. <strong>[C-01]</strong></p>
 <strong>SLIs/SLOs</strong>, incident management, and <strong>DR</strong>
 playbooks with game-days.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>SLOs + DR</strong> aumentam
-<strong>confiabilidade de serviços essenciais</strong>, mitigando
-impactos econômicos e de <strong>continuidade governamental</strong>.
-<strong>[C-04] [A-01]</strong></p>
+<p><strong>Why it matters nationally:</strong> <strong>SLOs +
+DR</strong> aumentam <strong>confiabilidade de serviços
+essenciais</strong>, mitigando impactos econômicos e de
+<strong>continuidade governamental</strong>. <strong>[C-04]
+[A-01]</strong></p>
 </blockquote></li>
 </ol>
 <h3 id="32-workstreams--deliverables">3.2 Workstreams →
@@ -660,16 +693,16 @@ Deliverables</h3>
 <em>Reference architectures; Landing Zones (prod/non-prod); IaC module
 library; control-to-implementation matrix</em>.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> Arquiteturas de referência e
-<strong>biblioteca IaC</strong> replicáveis reduzem <strong>Lead Time de
-conformidade</strong> e custos para o setor público. <strong>[C-01]
-[C-02]</strong></p>
+<p><strong>Why it matters nationally:</strong> Arquiteturas de
+referência e <strong>biblioteca IaC</strong> replicáveis reduzem
+<strong>Lead Time de conformidade</strong> e custos para o setor
+público. <strong>[C-01] [C-02]</strong></p>
 </blockquote></li>
 <li><p><strong>WS-2: CI/CD &amp; Supply Chain</strong> → <em>Enterprise
 CI/CD; policy-as-code repos; compliance dashboard; signed
 artifacts</em>.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>Dashboards de
+<p><strong>Why it matters nationally:</strong> <strong>Dashboards de
 conformidade</strong> dão <strong>transparência</strong> e
 <strong>accountability</strong> exigidas por padrões federais.
 <strong>[C-01] [C-03]</strong></p>
@@ -677,7 +710,7 @@ conformidade</strong> dão <strong>transparência</strong> e
 <li><p><strong>WS-3: Kubernetes/ARO</strong> → <em>GitOps blueprints;
 cluster baselines; policy packs; DR runbooks</em>.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>Baselines de
+<p><strong>Why it matters nationally:</strong> <strong>Baselines de
 cluster</strong> endurecem plataformas críticas e apoiam <strong>Zero
 Trust</strong> na prática. <strong>[C-01]</strong></p>
 </blockquote></li>
@@ -685,7 +718,7 @@ Trust</strong> na prática. <strong>[C-01]</strong></p>
 <em>Reliability engineering handbook; SLOs; incident/DR playbooks;
 quarterly resilience report</em>.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>Relatórios de
+<p><strong>Why it matters nationally:</strong> <strong>Relatórios de
 resiliência</strong> orientam gestores públicos sobre <strong>riscos
 operacionais</strong> e evolução de <strong>níveis de serviço</strong>.
 <strong>[C-04]</strong></p>
@@ -734,11 +767,12 @@ regions</strong> tested <strong>[C-04]</strong></td>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Porquê nacional:</strong> KPIs <strong>testáveis</strong>
-(Lead time, MTTR, CFR, SLO, % controles IaC, % serviços com SBOM)
-permitem <strong>verificação objetiva</strong> de ganhos de
-<strong>segurança, confiabilidade</strong> e <strong>eficiência</strong>
-em escala nacional. <strong>[B-01] [B-05] [B-06]</strong></p>
+<p><strong>Why it matters nationally:</strong> KPIs
+<strong>testáveis</strong> (Lead time, MTTR, CFR, SLO, % controles IaC,
+% serviços com SBOM) permitem <strong>verificação objetiva</strong> de
+ganhos de <strong>segurança, confiabilidade</strong> e
+<strong>eficiência</strong> em escala nacional. <strong>[B-01] [B-05]
+[B-06]</strong></p>
 </blockquote>
 <h3 id="34-governance--control-mapping">3.4 Governance &amp; Control
 Mapping</h3>
@@ -752,7 +786,7 @@ Cloud</strong> para contexto de política <strong>[A-01]
 <strong>IaC</strong>; <strong>policy-as-code</strong> repos; automated
 evidence exports.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>Automação de
+<p><strong>Why it matters nationally:</strong> <strong>Automação de
 controles</strong> reduz <strong>custo regulatório</strong>, melhora
 <strong>adesão</strong> e libera capacidade para <strong>inovação
 segura</strong> no ecossistema público/privado. <strong>[C-01]
@@ -765,7 +799,7 @@ tracks/runbooks; Permission sprawl → least-privilege + policy
 automation; Supply-chain exposure → <strong>SBOM +
 signing/provenance</strong>; Cost overruns → FinOps guardrails.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>Mitigações
+<p><strong>Why it matters nationally:</strong> <strong>Mitigações
 estruturadas</strong> diminuem risco de <strong>interrupções</strong> e
 <strong>incidentes de supply chain</strong>, protegendo
 <strong>infraestrutura crítica</strong> e <strong>dados
@@ -778,7 +812,7 @@ for <strong>SBOM/signing</strong>; SLO ownership.<br />
 Exit: autonomous teams on pipelines/GitOps; SLOs embedded; IaC
 ownership; automated audits; runbooks complete.</p>
 <blockquote>
-<p><strong>Porquê nacional:</strong> <strong>Capacitação
+<p><strong>Why it matters nationally:</strong> <strong>Capacitação
 interna</strong> e <strong>processos replicáveis</strong> deixam
 <strong>capacidade duradoura</strong> na força de trabalho dos EUA,
 reduzindo <strong>dependência externa</strong> e aumentando
@@ -788,43 +822,50 @@ reduzindo <strong>dependência externa</strong> e aumentando
 <hr />
 <h2 id="4-national-interest-matter-of-dhanasar-secnational-interest">4.
 National Interest (Matter of Dhanasar) {#sec:national-interest}</h2>
-<h3 id="41-prong-1--substantial-merit--national-importance">4.1 Prong 1
-— Substantial Merit &amp; National Importance</h3>
+<h3
+id="41-prong-1--substantial-merit--national-importance-c-01-c-02-c-03">4.1
+Prong 1 — Substantial Merit &amp; National Importance <strong>[C-01;\
+C-02]</strong> <strong>[C-03]</strong></h3>
 <p>The proposed endeavor—<strong>secure multi-cloud foundations
 (NIST/FedRAMP-mapped IaC), enterprise CI/CD with SBOM &amp; signing,
 Kubernetes/OpenShift (ARO) with GitOps guardrails, and SRE/DR for
 reliability</strong>—directly advances U.S.
 <strong>cybersecurity</strong> and <strong>critical infrastructure
 resilience</strong> priorities and the digital competitiveness agenda.
-[A-01; A-03; C-01–C-03]</p>
+[A-01; A-03; C-01–C-03] <strong>[C-04;\ C-02]</strong>
+<strong>[C-03]</strong></p>
 <p><em>Policy hook (national interest):</em> NSS 2022 underscores
 defending critical infrastructure and securing the digital ecosystem;
 the U.S. Treasury’s Cloud report calls for modernized, well-governed
 cloud to reduce systemic risk; EO 14028 drives <strong>software
 supply-chain</strong> integrity via <strong>SBOM/signing</strong>—all of
 which are operationalized by the mapped controls and pipelines here.
-[A-01; A-02; A-03; C-01–C-03]</p>
+[A-01; A-02; A-03; C-01–C-03] <strong>[C-04;\ C-02]</strong></p>
 <p><em>Economic &amp; workforce hook:</em> WEF 2025 and BLS 2024 point
 to sustained demand for cloud, DevOps and cybersecurity roles supporting
 essential services; aligning <strong>automation +
 compliance-as-code</strong> scales scarce talent impact and reduces
-time-to-assurance for public-interest workloads. [B-01–B-03]</p>
-<h3 id="42-prong-2--well-positioned-to-advance-the-endeavor">4.2 Prong 2
-— Well Positioned to Advance the Endeavor</h3>
+time-to-assurance for public-interest workloads. [B-01–B-03]
+<strong>[B-05;\ B-06]</strong></p>
+<h3 id="42-prong-2--well-positioned-to-advance-the-endeavor-d-01">4.2
+Prong 2 — Well Positioned to Advance the Endeavor <strong><a
+href="Babita"
+title="PDF: recommendation-letter-Babita-update-latest-signed.pdf">D-01</a></strong></h3>
 <p>The record evidences capability to execute at scale: <strong>AWS
 DevOps Pro/Developer/Architect, CompTIA Cloud+, Azure AZ-104</strong>,
 plus delivery across <strong>Terraform/Ansible</strong>,
 <strong>Kubernetes/ARO</strong>, <strong>CI/CD with
 SBOM/signing</strong>, and <strong>SRE/DR</strong>. These map directly
 to the endeavor’s workstreams (Foundations, CI/CD &amp; Supply-Chain,
-Kubernetes/ARO, SRE/DR). [D-01–D-06]</p>
+Kubernetes/ARO, SRE/DR). [D-01–D-06] <strong>[C-02]</strong></p>
 <p><em>Corroboration (letters):</em> independent letters describe prior
 outcomes (production clusters, IaC baselines, pipelines with policy
 gates, SLOs/DR) and forecast impact in U.S. contexts that depend on
 reliability and compliance speed. [E-01–E-05]</p>
 <h3
-id="43-prong-3--on-balance-waiving-labor-certification-benefits-the-us">4.3
-Prong 3 — On Balance, Waiving Labor Certification Benefits the U.S.</h3>
+id="43-prong-3--on-balance-waiving-labor-certification-benefits-the-us-c-01-c-02-c-04">4.3
+Prong 3 — On Balance, Waiving Labor Certification Benefits the U.S.
+<strong>[C-01;\ C-02]</strong> <strong>[C-04]</strong></h3>
 <p>Requiring labor certification would <strong>delay</strong> controls
 demanded by <strong>NIST SP 800-53 Rev.5</strong> and
 <strong>FedRAMP</strong> baselines, as well as
@@ -840,5 +881,55 @@ federal baselines and secure software mandates in agencies and regulated
 suppliers reduces time-to-compliance and exposure windows, which
 outweighs the procedural interest in labor certification for this case.
 [A-01; A-02; C-01–C-03]</p>
+<!-- LETTER_MAP_START -->
+
+<p>[D-05]: José Ricardo Ferrazza (PDF:
+recommendation-letter-JoséRicardoFerrazza_latest.pdf) [D-06]: Phillip
+(PDF: recommendation-letter-phillip-bmg.pdf)</p>
+<!-- LETTER_MAP_END -->
+
+<h3 id="appendix-b--letters-of-recommendation-updated">Appendix B —
+Letters of Recommendation (updated)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Code</th>
+<th>Recommender</th>
+<th>File (Drive)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">D-01</td>
+<td>Babita</td>
+<td>recommendation-letter-Babita-update-latest-signed.pdf</td>
+</tr>
+<tr>
+<td style="text-align: center;">D-02</td>
+<td>Bruno</td>
+<td>recommendation-letter-Bruno_english_serasa.pdf</td>
+</tr>
+<tr>
+<td style="text-align: center;">D-03</td>
+<td>Carlos</td>
+<td>recommendation-letter-cognizant-carlos.pdf</td>
+</tr>
+<tr>
+<td style="text-align: center;">D-04</td>
+<td>Gaurav</td>
+<td>recommendation-letter-Gaurav-update-latest-signed.pdf</td>
+</tr>
+<tr>
+<td style="text-align: center;">D-05</td>
+<td>José Ricardo Ferrazza</td>
+<td>recommendation-letter-JoséRicardoFerrazza_latest.pdf</td>
+</tr>
+<tr>
+<td style="text-align: center;">D-06</td>
+<td>Phillip</td>
+<td>recommendation-letter-phillip-bmg.pdf</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
