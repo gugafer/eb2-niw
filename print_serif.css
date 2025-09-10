@@ -1,85 +1,64 @@
-/* print_serif.css — EB2/NIW print style (serif, clean, binder-friendly) */
-
-:root{
-  --body-font: "Georgia","Times New Roman",serif;
-  --heading-font: "Georgia",serif;
-  --mono-font: "Consolas","Courier New",monospace;
-  --ink: #111;
-}
-
-html,body{
-  font-family: var(--body-font);
-  font-size: 11pt;
-  line-height: 1.35;
-  color: var(--ink);
-}
-
-@page{
+/* print_serif.css — estilo de impressão (serif), Officer-friendly */
+@page {
   size: A4;
-  margin: 22mm 18mm 20mm 18mm; /* top right bottom left */
+  margin: 22mm 18mm 20mm 18mm;
 }
 
-/* Headings */
-h1,h2,h3,h4{
-  font-family: var(--heading-font);
+html, body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12pt;
+  line-height: 1.35;
+  color: #111;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Times New Roman", Georgia, serif;
   font-weight: 700;
-  color: #000;
+  line-height: 1.2;
   page-break-after: avoid;
+  margin: 1.1em 0 0.5em;
 }
-h1{ font-size: 20pt; margin: 0 0 10pt 0; }
-h2{ font-size: 16pt; margin: 18pt 0 8pt 0; }
-h3{ font-size: 13pt; margin: 14pt 0 6pt 0; }
-h4{ font-size: 11pt; margin: 12pt 0 6pt 0; font-variant: small-caps; }
 
-/* Paragraphs & lists */
-p{ margin: 0 0 8pt 0; orphans: 3; widows: 3; }
-ul,ol{ margin: 0 0 8pt 20pt; }
+h1 { font-size: 22pt; border-bottom: 1px solid #000; padding-bottom: 4px; }
+h2 { font-size: 18pt; }
+h3 { font-size: 14pt; }
+h4 { font-size: 12pt; font-style: italic; }
 
-/* Tables */
-table{ width: 100%; border-collapse: collapse; page-break-inside: auto; }
-th,td{ border: 1px solid #ccc; padding: 6pt 8pt; vertical-align: top; }
-thead{ display: table-header-group; }
-tfoot{ display: table-footer-group; }
+p { margin: 0.4em 0 0.6em; }
 
-/* Code blocks */
-code,pre{ font-family: var(--mono-font); font-size: 10pt; }
-pre{ border: 1px solid #ddd; padding: 8pt; background: #f9f9f9;
-     white-space: pre-wrap; word-wrap: break-word; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.6em 0 1em;
+  font-size: 11pt;
+}
+th, td { border: 1px solid #999; padding: 6px 8px; vertical-align: top; }
+th { background: #f2f2f2; font-weight: 700; }
 
-/* Links: keep clean for print */
-a{ color: inherit; text-decoration: none; }
-a[href^="#"]:after, a[href^="http"]:after{ content: ""; } /* no visible markers */
+/* Links “invisíveis” para impressão: sem sublinhado/cores estranhas */
+a { color: inherit; text-decoration: none; }
+a[href^="http"]::after { content: ""; }
 
-/* Rules, quotes, figures */
-hr{ border: 0; border-top: 1px solid #999; margin: 12pt 0; }
-blockquote{ margin: 8pt 18pt; color: #333; }
-figure{ margin: 8pt 0; page-break-inside: avoid; }
-figcaption{ font-size: 9pt; color: #555; }
+/* Código / monospace em 11pt */
+code, pre { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 11pt; }
 
-/* Page breaks */
-.page-break{ page-break-before: always; }
-h1:not(:first-of-type){ page-break-before: always; } /* start major sections on new page */
+/* Quebras lógicas para seções grandes */
+.section, .level1, .level2 { page-break-inside: avoid; }
+hr { border: 0; border-top: 1px solid #ccc; margin: 1.2em 0; }
 
-/* Exhibit dividers (if you render them from HTML) */
-.section-divider{
-  page-break-before: always;
+/* Divisórias EXHIBITS — visual levemente destacado no HTML imprimível */
+.divider {
+  font-size: 20pt;
   text-align: center;
-  font-size: 18pt;
-  letter-spacing: 0.12em;
-  margin-top: 120pt;
+  letter-spacing: 0.08em;
+  margin: 1.5em 0 0.8em;
+  padding: 0.4em 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
-.exhibit-label{
-  font-size: 22pt; font-weight: 700; letter-spacing: 0.18em;
-  text-align: center; margin: 140pt 0 40pt 0;
-}
-.exhibit-sub{ font-size: 12pt; text-align: center; margin-bottom: 80pt; color: #333; }
 
-/* TOC */
-.toc{ font-size: 10pt; }
-.toc a{ text-decoration: none; }
+/* Tabelas compactas (Officer-MIN) */
+.table-compact th, .table-compact td { padding: 4px 6px; font-size: 10.5pt; }
 
-/* Screen preview niceties (no effect on print) */
-@media screen{
-  body{ max-width: 800px; margin: 32px auto; }
-  .page-break{ border-top: 2px dashed #ddd; padding-top: 16px; }
-}
+/* Evitar órfãs/viúvas feias na impressão */
+p, li { orphans: 3; widows: 3; }
