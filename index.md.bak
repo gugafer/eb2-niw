@@ -569,3 +569,64 @@ Exit: times autônomos; SLOs embed; ownership de IaC; auditorias automatizadas; 
 - **C-04** WEF — Future of Jobs Report 2025 — _WEF_Future_of_Jobs_Report_2025.pdf_ (TBD — adicionar ao C-group)
 - **C-05** NSF 25-307 — STEM — _nsf25307.pdf_ (TBD — adicionar ao C-group)
 - **C-06** BLS — Occupational Outlook (Computer Network Architects) — _Computer Network Architects _ Occupational Outlook Handbook_ _ U.S. Bureau of Labor Statistics-1.pdf_ (TBD — adicionar ao C-group)
+
+## Proposed Endeavor (verbatim)
+
+
+## 3) Evidence Map — Quick Cross-Refs (Annex-IDs)
+
+| Bucket | Annex-ID (pages) | What it proves |
+|---|---|---|
+| **Policy/Strategy** | **[A-01, pp. 6,10–11]**; **[A-02, pp. 2–3]**; **[A-03, pp. 1,3–4]** | National priority: cyber, critical infrastructure, secure software/compute |
+| **Industry/Workforce** | **[B-01, pp. 3–5]**; **[B-02, pp. 6–9]**; **[B-03, pp. 9–12]**; **[B-05, pp. 8–15, 40–52]**; **[B-06, pp. 5–12, 28–37]** | Demand/skills for Cloud/DevOps/Cyber |
+| **Standards/Cloud** | **[C-01, pp. 1–3]**; **[C-02, pp. 1–3]**; **[C-04, p. 1]** | NIST/FedRAMP controls; reliability |
+| **Credentials/Profile** | **[D-01]–[D-06]** | Readiness and track record |
+
+[[PAGE BREAK]]
+
+# COVER LETTER — EB-2 NIW (Form I-140 Self-Petition; Premium Processing)
+
+**GUSTAVO DE OLIVEIRA FERREIRA** — Cloud & DevOps Engineer  
+Email: [YOUR EMAIL] · Phone: [YOUR PHONE]  
+Address: [YOUR FULL ADDRESS]
+
+---
+
+**Date:** August 28, 2025  
+**To:** U.S. Citizenship and Immigration Services (USCIS)  
+[USCIS LOCKBOX ADDRESS OR FIELD OFFICE]  
+**RE:** *Form I-140 — EB-2 National Interest Waiver (NIW);* **Form I-907 — Premium Processing**  
+**Petitioner/Beneficiary:** **Gustavo de Oliveira Ferreira** (self-petition)  
+**A-Number (if any):** [A-NUMBER, IF ANY]
+
+---
+
+**Summary (Matter of Dhanasar).**  
+**Prong 1 — National importance.** The endeavor—**secure cloud & DevOps automation** for organizations operating in or supporting **critical infrastructure**—directly advances **cybersecurity**, **resilient digital infrastructure**, and **continuity of services**, consistent with federal strategy **[A-01, pp. 6, 10–11; A-02, pp. 2–3; A-03, pp. 1, 3–4]** (see also [@NSS-2022; @CET-List-2023; @Treasury-Cloud-2023]). Industry data show persistent demand for Cloud/DevOps/Cyber skills **[B-01, pp. 3–5; B-02, pp. 6–9; B-03, pp. 9–12; B-05, pp. 8–15, 40–52; B-06, pp. 5–12, 28–37]** (e.g., [@CompTIA-Outlook-2025; @CompTIA-Workforce-2024; @CompTIA-TechJobs-2025-05; @WEF-Future-of-Jobs-2025; @Skillsoft-ITSS-2023]). Standards (e.g., **NIST/FedRAMP**) require **automation/policy-as-code** at scale **[C-01, pp. 1–3; C-02, pp. 1–3]**.  
+**Prong 2 — Well positioned.** Multi-cloud credentials and delivery record in **IaC**, **CI/CD with policy-as-code**, **SBOM & artifact signing/provenance**, **Kubernetes/OpenShift (ARO) with GitOps**, and **Observability & Reliability** demonstrate ability to execute **[D-01–D-06; E-01; E-02]**.  
+**Prong 3 — Balance.** Waiving the job offer/labor certification avoids delays to **Zero-Trust**, **SBOM/signing**, and **DR** workstreams in critical systems, delivering measurable public-interest outcomes **[A-01; A-03; C-01; C-02]**.
+
+**Proposed outcomes (12–24 months).**  
+• **AWS/Azure landing zones via IaC** mapped to **NIST/FedRAMP** controls **[C-01; C-02]**  
+• **Enterprise CI/CD** with **policy-as-code**, **SBOM**, **signing/provenance** **[C-01; C-03]**  
+• **Kubernetes/OpenShift (ARO)** with **GitOps** and guardrails (OPA/PodSecurity)  
+• **Observability & Reliability** (SLIs/SLOs, incident playbooks, **DR** multi-region, game-days) **[C-04]**  
+**KPIs:** lead time ↓ **50%**; change failure ↓ **30%**; **MTTR ↓ 40%**; **SLO ≥ 95%**; **≥85%** controls via **IaC**; **≥85%** services with **SBOM/signing**.
+
+Respectfully,
+
+<br><br>
+**Gustavo de Oliveira Ferreira**  
+Cloud & DevOps Engineer (Self-Petitioner)
+
+[[PAGE BREAK]]
+
+# MAIN PETITION MEMORANDUM — FULL
+*EB-2 National Interest Waiver (NIW) — Gustavo de Oliveira Ferreira (Self-Petitioner)*
+
+> **Cross-reference legend.** In-text citations use **Annex-IDs** (e.g., **[A-01, pp. 10–11]**) and BibTeX keys (e.g., [@NSS-2022]) where relevant. See **Section 6 — Evidence Index** for pages and how each item supports **Dhanasar Prongs 1–3**.
+
+---
+
+
+

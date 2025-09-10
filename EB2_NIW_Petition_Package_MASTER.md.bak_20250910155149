@@ -286,4 +286,192 @@ The record evidences capability to execute at scale: **AWS DevOps Pro/Developer/
 Requiring labor certification would **delay** controls demanded by **NIST SP 800-53 Rev.5** and **FedRAMP** baselines, as well as **SBOM/provenance** adoption under EO 14028—diminishing national cyber posture in critical sectors. Dispensing with it enables **immediate** deployment of IaC-mapped controls, CI/CD with signed artifacts, and SRE/DR runbooks that cut **lead time**, **MTTR**, and **change-failure**, while raising **SLOs** and the percentage of automated controls. [A-01; C-01; C-02; C-03]
 
 *Balance test (public benefit):* Accelerated conformity to federal baselines and secure software mandates in agencies and regulated suppliers reduces time-to-compliance and exposure windows, which outweighs the procedural interest in labor certification for this case. [A-01; A-02; C-01–C-03]
+public-interest systems **[A-01; A-03; B-01–B-03; C-01; C-02]**.  
+**Conclusion:** balance favors the waiver.  
+
+### 4.4 Evidence Map by Prong
+
+| Prong | Purpose | Key Annex IDs (pages) |
+|---|---|---|
+| **1 — National importance** | Strategy & demand | **[A-01, pp. 6,10–11] [A-02, pp. 2–3] [A-03, pp. 1,3–4] [B-01, pp. 3–5] [B-02, pp. 6–9] [B-03, pp. 9–12] [B-05, pp. 8–15, 40–52] [B-06, pp. 5–12, 28–37] [C-01, pp. 1–3]** |
+| **2 — Positioning** | Credentials & execution | **[D-01–D-06] [C-01] [C-02]** *(letters: **[E-01; E-02]**)* |
+| **3 — Balance** | Public-interest benefit | **[A-01] [A-03] [B-01–B-03] [C-01] [C-02]** |
+
+---
+
+## 5) Implementation Plan & Timeline (Detailed)
+> **Binder pagination (current build):** pp. 8–8.
+
+### 5.1 Scope & Assumptions
+**Scope:** Foundations (AWS/Azure) with **IaC** mapped to **NIST/FedRAMP** **[C-01; C-02]**; **CI/CD** with **policy-as-code**, **SBOM/signing** **[C-03]**; **Kubernetes/ARO + GitOps**; **Observability & Reliability** with **DR** **[C-04]**.  
+**Assumptions:** executive sponsorship; org prerequisites; security buy-in; budget; enablement.
+
+### 5.2 Workstreams → Activities → Deliverables
+- **WS-1 — Cloud Foundations:** Org/IAM/AAD; network; encryption/keys; logging; **IaC modules** + **control-to-implementation** → **Reference architectures**, **Landing Zones**, module library.  
+- **WS-2 — CI/CD & Supply Chain:** Pipeline templates; quality gates; **SBOM**; **signing/provenance**; secrets mgmt → **Enterprise CI/CD**, **policy-as-code**, **compliance dashboard**.  
+- **WS-3 — Kubernetes/ARO:** Cluster baselines; **GitOps** repos; OPA/PodSecurity; image hardening; observability → **GitOps blueprints**, **DR runbooks**.  
+- **WS-4 — Observability & Reliability:** SLIs/SLOs; incident & continuity; **DR** multi-region and game-days.
+
+### 5.3 Timeline & Milestones (12–24m)
+| Milestone | Target | Success Criteria |
+|---|---:|---|
+| **M1 — Foundations Ready** | 90d | **≥70%** controls via **IaC**; logging/KMS central **[C-01; C-02]** |
+| **M2 — Enterprise CI/CD** | 120–150d | **≥80%** services with **SBOM + signing** |
+| **M3 — K8s/ARO in Prod** | 180d | **2–3** clusters; **MTTR ↓ ~30%** |
+| **M4 — DR Validated** | 9–12m | SLOs; **P1 ↓ 25%**; **DR ≥ 2 regions** **[C-04]** |
+| **M5 — Compliance Automation** | 12–24m | Automated audit evidence; **lead time ↓ 50%**; **change failure ↓ 30%** |
+
+### 5.4 KPIs & Reporting
+Lead time; deployment frequency; SLO attainment; MTTR; incident rates; **% services with SBOM/attestation**; **% controls automated (IaC)**; policy violations; cost/perf.
+
+### 5.5 Governance & Control Mapping (initial)
+**NIST SP 800-53**, **FedRAMP**; **SBOM/signing/provenance** **[C-01; C-02]**.  
+**Artifacts:** **IaC** + **policy-as-code**; evidence exports.
+
+### 5.6 Risks & Mitigations (excerpt)
+Lock-in → IaC modular; Skills gap → enablement; Permission sprawl → least-privilege & policy; Supply chain → **SBOM + signing/provenance**; Cost → FinOps.
+
+### 5.7 Dependencies & Exit Criteria
+Identity/AAD; KMS; change mgmt; security buy-in; SLO owners.  
+Exit: autonomous teams; SLOs embedded; IaC ownership; automated audits; complete runbooks.
+
+---
+
+## 6) Evidence Index (Final, Numbered)
+> **Binder pagination (current build):** pp. 9–9.
+
+### A — Policy / Strategy
+- **A-01** — *National Security Strategy (10/2022)* — **pp. 6, 10–11** — cybersecurity; **critical infrastructure** — §§1, 3, 4, 5.  
+- **A-02** — *Critical & Emerging Technologies (CET)* — **pp. 2–3** — CET; secure software/AI-compute — §§1, 4, 5.  
+- **A-03** — *Treasury Cloud Report / federal refs* — **pp. 1, 3–4** — cloud risk/gov; CI — §§1, 3, 4, 5.
+
+### B — Industry / Workforce
+- **B-01** — *CompTIA IT Industry Outlook 2025* — **pp. 3–5** — cloud/cyber demand — §§1–4.  
+- **B-02** — *CompTIA State of the Tech Workforce 2024* — **pp. 6–9** — workforce & skills — §§1–4.  
+- **B-03** — *CompTIA Tech Jobs Report (05/2025)* — **pp. 9–12** — hiring signals (cloud/DevOps) — §§1–4.  
+- **B-04** — *BLS OOH — Computer Network Architects* — salary/forecast — §§2, 5.  
+- **B-05** — *WEF — Future of Jobs 2025* — **pp. 8–15; 40–52** — macro-trends & skills gaps — §§1–4.  
+- **B-06** — *Skillsoft — IT Skills & Salary 2023* — **pp. 5–12; 28–37** — cert value; skills gap — §§1–4.
+
+### C — Standards / Cloud / Compliance
+- **C-01** — *NIST SP 800-53/FedRAMP mapping* — **pp. 1–3** — §§1–5.  
+- **C-02** — *Federal treatment of cloud services* — **pp. 1–3** — §§1–5.  
+- **C-03** — *Software supply chain safeguards (SBOM/signing)* — **pp. 1, 3–4** — §§1, 3, 4.  
+- **C-04** — *Reliability Engineering & Observability Reference* — **p. 1** — §§1–3, 5.
+
+### D — Credentials / Education
+- **D-01** — *AWS DevOps Engineer – Professional* — **p. 1** — §§2–4.  
+- **D-02** — *AWS Developer – Associate* — **p. 1** — §§2–4.  
+- **D-03** — *AWS Solutions Architect – Associate* — **p. 1** — §§2, 4.  
+- **D-04** — *CompTIA Cloud+ (ANAB/ISO 17024)* — **p. 1** — §§2–4.  
+- **D-05** — *Microsoft Azure Administrator (AZ-104)* — **pp. 1–2** — §§2–4.  
+- **D-06** — *Resume Snapshot (CV 2025)* — — §§2–4.  
+- **D-07** — *Academic Equivalency Evaluation (AEE)* — **pp. 1–3, 7–8** — §2.
+
+### E — Letters of Recommendation
+- **E-01** — Carlos Feitosa (Cognizant) — **binder pp. 716–717** — impact on automation & reliability.  
+- **E-02** — José R. Ferrazza (DXC) — **binder pp. 712–715** — CI/CD gains; certifications/plan.
+
+### F — Projects / Outputs (if applicable)
+- **F-01…** — pipelines/blueprints, GitOps baselines, compliance dashboards, whitepapers/OSS.
+
+### G — Career Pathway & Plan
+- **G-01** — Career Pathway Diagram (2025) — **binder pp. 719–720**  
+- **G-02** — Real Timeline (employers/cities) — *(inlined in §2.1; see CTPS)*  
+- **G-03** — Five-Year Roadmap (2025–2030) with KPIs — *(plan outline in §3/§5)*  
+- **G-04** — Certification Maintenance Plan — *(aligned with @AWS-Cert-Paths-2025)*  
+- **G-90** — CTPS Digital (employment) — **binder pp. 721–727**  
+- **G-91** — Payslip (latest month) — **binder p. 728**
+
+---
+
+## References
+*(auto-generated by `--citeproc` from `references.bib`)*
+
+[[PAGE BREAK]]
+
+<!-- COVER SHEETS (A–G) — START -->
+
+# ANNEX A — Policy & Strategy
+**What it is:** National strategy and federal materials elevating **cybersecurity** and **critical infrastructure**.  
+**What it proves:** National priority for digital resilience, continuity of services, and secure software.  
+**Includes (examples):**  
+- **A-01 — National Security Strategy (2022)** — cyber & critical infrastructure  
+- **A-02 — Critical & Emerging Technologies (CET)** — secure software / scalable compute  
+- **A-03 — Treasury Cloud Report / federal refs** — cloud risk/governance  
+**Insert here:** *Biden-Harris-Administrations-National-Security-Strategy-10.2022.pdf*; *CMR-PREX23-00185928.pdf*; *Treasury-Cloud-Report.pdf*.
+
+---
+
+# ANNEX B — Industry & Workforce
+**What it is:** Evidence of **persistent demand** for Cloud/DevOps/Cyber and 2025–2030 macro-trends.  
+**What it proves:** Market materiality and skills scarcity — supports the endeavor’s relevance.  
+**Includes (examples):**  
+- **B-01 — CompTIA IT Industry Outlook 2025**  
+- **B-02 — CompTIA State of the Tech Workforce 2024**  
+- **B-03 — CompTIA Tech Jobs Report (05/2025)**  
+- **B-04 — BLS OOH — Computer Network Architects**  
+- **B-05 — WEF — Future of Jobs 2025**  
+- **B-06 — Skillsoft — IT Skills & Salary 2023**  
+**Insert here:** *comptia-it-industry-outlook-2025.pdf*; *comptia-state-of-the-tech-workforce-2024.pdf*; *05-2025-CompTIA Tech Jobs Report.pdf*; BLS OOH (1/2/3); *WEF_Future_of_Jobs_Report_2025.pdf*; *Skillsoft-IT-Skills-and-Salary-Report-2023.pdf*.
+
+---
+
+# ANNEX C — Standards, Governance & Compliance
+**What it is:** **NIST SP 800-53 / FedRAMP**, federal cloud treatment, and **software supply-chain safeguards** (SBOM/signing/provenance).  
+**What it proves:** Need for **automation/policy-as-code** and mapped controls at scale.  
+**Includes (examples):**  
+- **C-01 — NIST SP 800-53 / FedRAMP mapping**  
+- **C-02 — Federal treatment of cloud services**  
+- **C-03 — Software supply chain (SBOM/signing/provenance)**  
+- **C-04 — Reliability & Observability Reference**  
+**Insert here:** your C-01…C-04 PDFs (e.g., NIST/FedRAMP excerpts, federal references).
+
+---
+
+# ANNEX D — Credentials & Education
+**What it is:** Multi-cloud certifications and academic equivalency.  
+**What it proves:** Technical capacity and readiness to execute the endeavor.  
+**Includes (examples):**  
+- **D-01 — AWS DevOps Engineer – Professional**  
+- **D-02 — AWS Developer – Associate**  
+- **D-03 — AWS Solutions Architect – Associate**  
+- **D-04 — CompTIA Cloud+ (ANAB/ISO 17024)**  
+- **D-05 — Microsoft Azure Administrator (AZ-104)**  
+- **D-07 — Academic Equivalency Evaluation (AEE)**  
+**Insert here:** your certificates (PDF) and AEE.
+
+---
+
+# ANNEX E — Letters of Recommendation
+**What it is:** Independent letters corroborating delivery (velocity/quality), automation, and reliability outcomes.  
+**What it proves:** Peer/management recognition and practical impact.  
+**Includes (examples):**  
+- **E-01 — Carlos Feitosa (Cognizant)**  
+- **E-02 — José R. Ferrazza (DXC)**  
+**Insert here:** *RECOMMENDATION LETTER COGNIZANT_unlocked.pdf*; *Letter_of_Recommendation_JoséRicardoFerrazza_latest (1).pdf*.
+
+---
+
+# ANNEX F — Projects & Outputs
+**What it is:** Technical outputs demonstrating scalable execution (pipelines, GitOps blueprints, dashboards, whitepapers/OSS).  
+**What it proves:** Implementation capability and reuse.  
+**Includes (examples):**  
+- **F-01…** enterprise pipelines; **GitOps baselines**; **compliance dashboards**; whitepapers/OSS.  
+**Insert here:** your artifacts when available.
+
+---
+
+# ANNEX G — Career Pathway & Plan
+**What it is:** Work history, 5-year plan, and credential maintenance (coherence and viability).  
+**What it proves:** Clear roadmap, verifiable goals, and sustainability.  
+**Includes (examples):**  
+- **G-01 — Career Pathway Diagram (2025)**  
+- **G-02 — Real timeline (employers/cities)**  
+- **G-03 — Five-Year Roadmap (2025–2030) with KPIs**  
+- **G-04 — Certification Maintenance Plan**  
+- **G-90 — CTPS Digital** · **G-91 — Payslip (latest month)**  
+**Insert here:** *carrear pathway 2025.drawio.pdf*; *CTPSDigital_unlocked.pdf*; *Demonstrativo de Pagamento-latest-month.pdf*.
+
+<!-- COVER SHEETS (A–G) — END -->
 
