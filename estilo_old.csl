@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" default-locale="en-US">
+  <info>
+    <title>USCIS-Plain (en-US, author-date)</title>
+    <id>us.csl/uscis-plain-enus</id>
+    <link href="http://www.zotero.org/styles" rel="self"/>
+    <author><name>Custom</name></author>
+    <category citation-format="author-date"/>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+  </info>
+
+  <locale xml:lang="en-US">
+    <terms>
+      <term name="et-al">et al.</term>
+      <term name="page">p.</term>
+      <term name="page-range-delimiter">–</term>
+      <term name="accessed">Accessed</term>
+      <term name="retrieved">Retrieved</term>
+      <term name="from">from</term>
+      <term name="references">References</term>
+    </terms>
+  </locale>
+
+  <macro name="author">
+    <names variable="author">
+      <name form="long" and="symbol" delimiter=", " sort-separator=", " name-as-sort-order="all"/>
+      <label form="short" prefix=", " text-case="lowercase" strip-periods="true"/>
+      <substitute>
+        <names variable="editor"/>
+        <text variable="publisher"/>
+        <text variable="container-title"/>
+      </substitute>
+    </names>
+  </macro>
+
+  <macro name="year">
+    <date variable="issued"><date-part name="year"/></date>
+  </macro>
+
+  <macro name="title">
+    <choose>
+      <if type="article-journal chapter paper-conference" match="any">
+        <text variable="title" quotes="true"/>
+      </if>
+      <else>
+        <text variable="title"/>
+      </else>
+    </choose>
+  </macro>
+
+  <macro name="container">
+    <group delimiter=", ">
+      <text variable="container-title"/>
+      <text variable="collection-title"/>
+      <text variable="publisher"/>
+      <text variable="publisher-place"/>
+    </group>
+  </macro>
+
+  <macro name="locator"><text variable="page" prefix="p. "/></macro>
+
+  <macro name="url">
+    <choose>
+      <if variable="URL">
+        <group delimiter=" ">
+          <text term="retrieved" text-case="capitalize-first"/>
+          <text term="from"/>
+          <text variable="URL"/>
+        </group>
+      </if>
+    </choose>
+  </macro>
+
+  <citation collapse="year" et-al-min="4" et-al-use-first="1" disambiguate-add-givenname="false" disambiguate-add-year-suffix="true">
+    <sort><key macro="author"/><key macro="year"/></sort>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=", "><text macro="author"/><text macro="year"/></group>
+    </layout>
+  </citation>
+
+  <bibliography et-al-min="9" et-al-use-first="7" hanging-indent="true" entry-spacing="0" line-spacing="1">
+    <sort><key macro="author"/><key macro="year"/><key variable="title"/></sort>
+    <layout>
+      <group delimiter=". ">
+        <group delimiter=", "><text macro="author"/><text macro="year"/></group>
+        <text macro="title"/><text macro="container"/><text macro="locator"/><text macro="url"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>
