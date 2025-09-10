@@ -268,19 +268,25 @@ Exit: autonomous teams on pipelines/GitOps; SLOs embedded; IaC ownership; automa
 
 ---
 
-## 4) National Interest (Matter of Dhanasar)
-> **Binder pagination (current build):** pp. 7–7.
+## 4. National Interest (Matter of Dhanasar) {#sec:national-interest}
 
 ### 4.1 Prong 1 — Substantial Merit & National Importance
-Federal strategy documents elevate **cyber** and **critical infrastructure** as national imperatives **[A-01, pp. 6, 10–11; A-03, pp. 1, 3–4]**; the **CET** highlights cloud/CI-CD-enabled capabilities (secure software, scalable compute) **[A-02, pp. 2–3]**. Standards/compliance (NIST/FedRAMP; supply-chain safeguards) make **automation** and **policy-as-code** necessary at scale **[C-01, pp. 1–3; C-02, pp. 1–3]** (see also [@NSS-2022; @CET-List-2023; @Treasury-Cloud-2023]). **Industry data** confirm persistent demand **[B-01–B-03, B-05–B-06]** (e.g., [@CompTIA-Outlook-2025; @CompTIA-Workforce-2024; @CompTIA-TechJobs-2025-05; @WEF-Future-of-Jobs-2025; @Skillsoft-ITSS-2023]).  
-**Conclusion:** substantial merit & national importance.
+The proposed endeavor—**secure multi-cloud foundations (NIST/FedRAMP-mapped IaC), enterprise CI/CD with SBOM & signing, Kubernetes/OpenShift (ARO) with GitOps guardrails, and SRE/DR for reliability**—directly advances U.S. **cybersecurity** and **critical infrastructure resilience** priorities and the digital competitiveness agenda. [A-01; A-03; C-01–C-03]
+
+*Policy hook (national interest):* NSS 2022 underscores defending critical infrastructure and securing the digital ecosystem; the U.S. Treasury’s Cloud report calls for modernized, well-governed cloud to reduce systemic risk; EO 14028 drives **software supply-chain** integrity via **SBOM/signing**—all of which are operationalized by the mapped controls and pipelines here. [A-01; A-02; A-03; C-01–C-03]
+
+*Economic & workforce hook:* WEF 2025 and BLS 2024 point to sustained demand for cloud, DevOps and cybersecurity roles supporting essential services; aligning **automation + compliance-as-code** scales scarce talent impact and reduces time-to-assurance for public-interest workloads. [B-01–B-03]
 
 ### 4.2 Prong 2 — Well Positioned to Advance the Endeavor
-Multi-cloud certifications and track record in **IaC**, **CI/CD + SBOM/signing**, **Kubernetes/ARO + GitOps**, **Observability & Reliability** are documented **[D-01–D-06]**; alignment to frameworks **[C-01; C-02]**; **letters of recommendation** corroborate (**[E-01; E-02]**).  
-**Conclusion:** well positioned.
+The record evidences capability to execute at scale: **AWS DevOps Pro/Developer/Architect, CompTIA Cloud+, Azure AZ-104**, plus delivery across **Terraform/Ansible**, **Kubernetes/ARO**, **CI/CD with SBOM/signing**, and **SRE/DR**. These map directly to the endeavor’s workstreams (Foundations, CI/CD & Supply-Chain, Kubernetes/ARO, SRE/DR). [D-01–D-06]
 
-### 4.3 Prong 3 — On Balance, Beneficial to Waive the Job Offer/Labor Certification
-Waiver avoids delays in rolling out **Zero-Trust**, **SBOM/signing**, **DR**, and compliant foundations in public-interest systems **[A-01; A-03; B-01–B-03; C-01; C-02]**.  
+*Corroboration (letters):* independent letters describe prior outcomes (production clusters, IaC baselines, pipelines with policy gates, SLOs/DR) and forecast impact in U.S. contexts that depend on reliability and compliance speed. [E-01–E-05]
+
+### 4.3 Prong 3 — On Balance, Waiving Labor Certification Benefits the U.S.
+Requiring labor certification would **delay** controls demanded by **NIST SP 800-53 Rev.5** and **FedRAMP** baselines, as well as **SBOM/provenance** adoption under EO 14028—diminishing national cyber posture in critical sectors. Dispensing with it enables **immediate** deployment of IaC-mapped controls, CI/CD with signed artifacts, and SRE/DR runbooks that cut **lead time**, **MTTR**, and **change-failure**, while raising **SLOs** and the percentage of automated controls. [A-01; C-01; C-02; C-03]
+
+*Balance test (public benefit):* Accelerated conformity to federal baselines and secure software mandates in agencies and regulated suppliers reduces time-to-compliance and exposure windows, which outweighs the procedural interest in labor certification for this case. [A-01; A-02; C-01–C-03]
+public-interest systems **[A-01; A-03; B-01–B-03; C-01; C-02]**.  
 **Conclusion:** balance favors the waiver.  
 
 ### 4.4 Evidence Map by Prong
