@@ -20,6 +20,19 @@ Write-Host "[4/6] Grouped Exhibits from CSV"
 python add_grouped_exhibit_bookmarks_v2.py "EB2_NIW_Binder_FINAL_clean.pdf" "ExhibitMap.csv" "EB2_NIW_Binder_FINAL_GROUPED.pdf" --offset $Offset
 
 Write-Host "[5/6] Add top-level Front/Dividers/Exhibits"
+Write-Host "[5/6] Sync Appendix B order ↔ LETTER_MAP"
+$master = "EB2_NIW_Petition_Package_MASTER.md"
+$index  = "index.md"
+.\sync_appendix_b_order.ps1
+
+# opcional: promover os _SYNCED para os arquivos “oficiais”
+if (Test-Path "EB2_NIW_Petition_Package_MASTER._SYNCED.md") {
+  Copy-Item "EB2_NIW_Petition_Package_MASTER._SYNCED.md" $master -Force
+}
+if (Test-Path "index._SYNCED.md") {
+  Copy-Item "index._SYNCED.md" $index -Force
+}
+
 # Save to temp then move (avoid incremental-save error)
 $Tmp = "EB2_NIW_Binder_FINAL_TOPLEVEL.pdf"
 python add_front_divider_bookmarks_v3.py "EB2_NIW_Binder_FINAL_GROUPED.pdf" $Tmp

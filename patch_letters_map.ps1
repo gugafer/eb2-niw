@@ -43,7 +43,9 @@ $lines = $text -split "(`r`n|`n)"
 for($i=0; $i -lt $lines.Count; $i++){
   $l = $lines[$i]
   foreach($L in $letters){
-    $rx = '(?i)\b' + [regex]::Escape($L.name) + r'\b'
+    $rx = '(?i)\b' + [regex]::Escape($L.name) + '\b'     # ✅ string literal com \b
+  # ou, se preferir interpolação:
+  # $rx = "(?i)\b$([regex]::Escape($L.name))\b"
     if($l -match $rx){
       $l = Add-CodeIfMissing $l $L.code
     }

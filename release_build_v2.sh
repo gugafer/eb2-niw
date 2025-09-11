@@ -26,6 +26,12 @@ fi
 echo "[4/6] Grouped Exhibits from CSV"
 python add_grouped_exhibit_bookmarks_v2.py "EB2_NIW_Binder_FINAL_clean.pdf" "ExhibitMap.csv" "EB2_NIW_Binder_FINAL_GROUPED.pdf" --offset "$OFFSET"
 
+echo "[5/6] Sync Appendix B order ↔ LETTER_MAP"
+if command -v pwsh >/dev/null 2>&1; then
+  pwsh -NoProfile -File sync_appendix_b_order.ps1
+else
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -File sync_appendix_b_order.ps1
+fi
 echo "[5/6] Add top-level Front/Dividers/Exhibits"
 python add_front_divider_bookmarks_v3.py "EB2_NIW_Binder_FINAL_GROUPED.pdf" "EB2_NIW_Binder_FINAL_TOPLEVEL.pdf" || echo "[WARN] top-level bookmarks step skipped"
 mv -f "EB2_NIW_Binder_FINAL_TOPLEVEL.pdf" "EB2_NIW_Binder_FINAL_GROUPED.pdf"

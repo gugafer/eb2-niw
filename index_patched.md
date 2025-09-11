@@ -57,6 +57,21 @@
 - **No CSV mas não citados no MASTER:** 0 → —
 
 
+
+
+
+<!-- BEGIN:APPENDIX_B -->
+## Appendix B — Recommendation Letters (Detailed)
+
+| Code | Organization | Role | Signed | Pages |
+|:---:|---|---|:---:|:---:|
+| D-01 | Humana Inc. | Associate Director, DevOps Engineering | 2025-09-07 | 941–943 |
+| D-02 | Humana Inc. | Associate Director, DevOps Engineering | 2025-09-07 | 944–945 |
+| D-03 | Cognizant Brazil | Senior Manager, Project Delivery | 2025-08-26 | 946–947 |
+| D-04 | Banco Itaú (ex-Banco BMG) | Cloud Architect | 2025-09-07 | 948–951 |
+| D-05 | Serasa Experian | SRE / DevSecOps / Cloud (Manager) | 2025-09-07 | 952–955 |
+| D-06 | DXC Technology | Delivery Manager | 2025-05-25 | 956–959 |
+<!-- END:APPENDIX_B -->
 # TABLE OF CONTENTS (to be paginated post-layout)
 
 **Preliminary**  
@@ -924,25 +939,13 @@ Cloud & DevOps Engineer (Self-Petitioner)
 
 <!-- LETTER_MAP_START -->
 [D-01]: Babita (PDF: recommendation-letter-Babita-update-latest-signed.pdf)
-[D-02]: José Ricardo Ferrazza (PDF: recommendation-letter-JoséRicardoFerrazza_latest.pdf)
-[D-03]: Bruno (PDF: recommendation-letter-Bruno_english_serasa.pdf)
+[D-02]: Bruno (PDF: recommendation-letter-Bruno_english_serasa.pdf)
+[D-03]: Carlos (PDF: recommendation-letter-cognizant-carlos.pdf)
 [D-04]: Gaurav (PDF: recommendation-letter-Gaurav-update-latest-signed.pdf)
-[D-05]: Carlos (PDF: recommendation-letter-cognizant-carlos.pdf)
+[D-05]: José Ricardo Ferrazza (PDF: recommendation-letter-JoséRicardoFerrazza_latest.pdf)
 [D-06]: Phillip (PDF: recommendation-letter-phillip-bmg.pdf)
 <!-- LETTER_MAP_END -->
 
-<!-- BEGIN:APPENDIX_B -->
-## Appendix B — Recommendation Letters (Exhibit D)
-
-| Code | File | Organization | Role | Signed date | Pages |
-|:---:|------|--------------|------|------------:|:----:|
-| D-01 | recommendation-letter-Gaurav-update-latest-signed.pdf | Humana Inc. | — | 2025-09-07 | 941-943 |
-| D-02 | recommendation-letter-Babita-update-latest-signed.pdf | Humana Inc. | — | 2025-09-07 | 944-945 |
-| D-03 | recommendation-letter-cognizant-carlos.pdf | Cognizant (Brazil) | — | 2025-08-26 | 946-947 |
-| D-04 | recommendation-letter-phillip-bmg.pdf | Banco BMG (current: Itaú Unibanco) | — | 2025-09-07 | 948-951 |
-| D-05 | recommendation-letter-Bruno_english_serasa.pdf | Serasa Experian | — | 2025-09-07 | 952-955 |
-| D-06 | recommendation-letter-JoséRicardoFerrazza_latest.pdf | DXC Technology | — | 2025-05-25 | 956-959 |
-<!-- END:APPENDIX_B -->
 
 ### Appendix B — Letters of Recommendation (updated)
 
@@ -954,6 +957,4 @@ Cloud & DevOps Engineer (Self-Petitioner)
 | D-04  | Gaurav                     | recommendation-letter-Gaurav-update-latest-signed.pdf    |
 | D-05  | José Ricardo Ferrazza      | recommendation-letter-JoséRicardoFerrazza_latest.pdf     |
 | D-06  | Phillip                    | recommendation-letter-phillip-bmg.pdf                    |
-
-
 

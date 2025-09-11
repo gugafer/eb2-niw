@@ -811,11 +811,11 @@ System.Collections.Hashtable
 | D-06  | Phillip                    | recommendation-letter-phillip-bmg.pdf                    |
 
 <!-- LETTER_MAP_START -->
-[D-01]: Babita (PDF: recommendation-letter-Babita-update-latest-signed.pdf)
-[D-02]: José Ricardo Ferrazza (PDF: recommendation-letter-JoséRicardoFerrazza_latest.pdf)
-[D-03]: Bruno (PDF: recommendation-letter-Bruno_english_serasa.pdf)
-[D-04]: Gaurav (PDF: recommendation-letter-Gaurav-update-latest-signed.pdf)
-[D-05]: Carlos (PDF: recommendation-letter-cognizant-carlos.pdf)
+[D-01]: Gaurav (PDF: recommendation-letter-Gaurav-update-latest-signed.pdf)
+[D-02]: Carlos (PDF: recommendation-letter-cognizant-carlos.pdf)
+[D-03]: José Ricardo Ferrazza (PDF: recommendation-letter-JoséRicardoFerrazza_latest.pdf)
+[D-04]: Babita (PDF: recommendation-letter-Babita-update-latest-signed.pdf)
+[D-05]: Bruno (PDF: recommendation-letter-Bruno_english_serasa.pdf)
 [D-06]: Phillip (PDF: recommendation-letter-phillip-bmg.pdf)
 <!-- LETTER_MAP_END -->System.Collections.Hashtable
 System.Collections.Hashtable
@@ -1634,11 +1634,10 @@ System.Collections.Hashtable
 
 | Code | File | Organization | Role | Signed date | Pages |
 |:---:|------|--------------|------|------------:|:----:|
-| D-01 | recommendation-letter-Gaurav-update-latest-signed.pdf | Humana Inc. | — | 2025-09-07 | 941-943 |
-| D-02 | recommendation-letter-Babita-update-latest-signed.pdf | Humana Inc. | — | 2025-09-07 | 944-945 |
-| D-03 | recommendation-letter-cognizant-carlos.pdf | Cognizant (Brazil) | — | 2025-08-26 | 946-947 |
-| D-04 | recommendation-letter-phillip-bmg.pdf | Banco BMG (current: Itaú Unibanco) | — | 2025-09-07 | 948-951 |
 | D-05 | recommendation-letter-Bruno_english_serasa.pdf | Serasa Experian | — | 2025-09-07 | 952-955 |
+| D-01 | recommendation-letter-Gaurav-update-latest-signed.pdf | Humana Inc. | — | 2025-09-07 | 941-943 |
+| D-04 | recommendation-letter-phillip-bmg.pdf | Banco BMG (current: Itaú Unibanco) | — | 2025-09-07 | 948-951 |
+| D-02 | recommendation-letter-Babita-update-latest-signed.pdf | Humana Inc. | — | 2025-09-07 | 944-945 |
 | D-06 | recommendation-letter-JoséRicardoFerrazza_latest.pdf | DXC Technology | — | 2025-05-25 | 956-959 |
+| D-03 | recommendation-letter-cognizant-carlos.pdf | Cognizant (Brazil) | — | 2025-08-26 | 946-947 |
 <!-- END:APPENDIX_B -->
-
